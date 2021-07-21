@@ -1,0 +1,49 @@
+{
+  "name": "my-webpack-project",
+  "version": "1.0.0",
+  "description": "My webpack project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=production --node-env=production",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "dev": "webpack --watch",
+    "serve": "webpack serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/necklax/SanpachiUI.git"
+  },
+  "author": "necklax",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/necklax/SanpachiUI/issues"
+  },
+  "homepage": "https://github.com/necklax/SanpachiUI#readme",
+  "dependencies": {
+    "@popperjs/core": "^2.9.2",
+    "bootstrap": "^5.0.2",
+    "gsap": "^3.7.1",
+    "hard-source-webpack-plugin": "^0.13.1",
+    "mini-css-extract-plugin": "^2.1.0",
+    "postcss-100vh-fix": "^1.0.2",
+    "vue": "^2.6.14",
+    "vue-dragscroll": "^3.0.0",
+    "vue-loader": "^15.9.6",
+    "vue-template-compiler": "^2.6.14"
+  },
+  "devDependencies": {
+    "@webpack-cli/generators": "^2.2.0",
+    "autoprefixer": "^10.3.1",
+    "css-loader": "^6.2.0",
+    "postcss": "^8.3.5",
+    "postcss-loader": "^6.1.1",
+    "sass": "^1.35.2",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.2.1",
+    "webpack": "^5.45.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>summary</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="assets/css/app.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="componentTitle">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">index</a></li>
+            <li class="breadcrumb-item active" aria-current="page">summary</li>
+          </ol>
+        </nav>
+      </div>
+      <section class="widelayout">
+        <div class="brandContainer">
+          <h2 class="mb-5">リンクあり</h2>
+          <div class="row g-5">
+            <div class="col-lg-4 col-sm-6" v-for="i in 3">
+              <div class="summary">
+                <div class="thumbnail">
+                  <img
+                    src="assets/img/img_1618_1.png"
+                    srcset="
+                      assets/img/img_1618_1@2x.png 2x,
+                      assets/img/img_1618_1@3x.png 3x
+                    "
+                  />
+                </div>
+                <p class="title">
+                  世界で最も小さく、薄く、軽い、5Gスマートフォン、登場。
+                </p>
+                <p class="text">
+                  スマートフォンで最速のA14
+                  Bionicチップ。エッジからエッジまで広がるOLEDディスプレイ。どのカメラでも使えるナイトモード。そのすべてを2つの完璧なサイズで。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="widelayout">
+        <div class="brandContainer">
+          <h2 class="mb-5">リンクなし</h2>
+          <div class="row g-5">
+            <div class="col-lg-4 col-sm-6" v-for="i in 3">
+              <div class="summary">
+                <a href="#" class="thumbnail">
+                  <img
+                    src="assets/img/img_1618_1.png"
+                    srcset="
+                      assets/img/img_1618_1@2x.png 2x,
+                      assets/img/img_1618_1@3x.png 3x
+                    "
+                  />
+                </a>
+                <p class="title">
+                  <a href="#"
+                    >世界で最も小さく、薄く、軽い、5Gスマートフォン、登場。</a
+                  >
+                </p>
+                <p class="text">
+                  スマートフォンで最速のA14
+                  Bionicチップ。エッジからエッジまで広がるOLEDディスプレイ。どのカメラでも使えるナイトモード。そのすべてを2つの完璧なサイズで。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

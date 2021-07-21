@@ -1,0 +1,12 @@
+.widelayout {
+  padding: 60px 0;
+  @include media-breakpoint-up(sm) {
+    padding: 90px 0;
+  }
+  @include media-breakpoint-up(lg) {
+    padding: 120px 0;
+  }
+}
+.brandContainer {
+  padding: 0 6%;
+}

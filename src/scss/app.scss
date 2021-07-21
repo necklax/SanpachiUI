@@ -3,4 +3,24 @@
 
 html {
   font-size: 15px;
+  font-feature-settings: "palt";
+  letter-spacing: 0.08em;
 }
+.componentTitle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0.25;
+  z-index: $zindex-fixed;
+  padding: 15px;
+  font-size: 10px;
+  transition: $transition-base;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+@import "components/layout";
+@import "components/summary";

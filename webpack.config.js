@@ -38,11 +38,30 @@ const config = {
       },
       {
         test: /\.s[ac]ss$/i,
+
         use: [
-          MiniCssExtractPlugin.loader,
-          "css-loader",
+          { loader: MiniCssExtractPlugin.loader },
+          {
+            loader: "css-loader",
+            options: {
+              url: false,
+              sourceMap: true,
+            },
+          },
           "postcss-loader",
-          "sass-loader",
+          {
+            loader: "sass-loader",
+            options: {
+              // dart-sass を優先
+              implementation: require("sass"),
+              sassOptions: {
+                // fibers を使わない場合は以下で false を指定
+                fiber: require("fibers"),
+              },
+              // ソースマップを有効に
+              sourceMap: true,
+            },
+          },
         ],
       },
       {

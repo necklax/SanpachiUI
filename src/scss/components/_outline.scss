@@ -1,0 +1,57 @@
+.outlineWrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  .outline {
+    flex-basis: calc(100% / 2);
+    position: relative;
+    overflow: hidden;
+    @include media-breakpoint-up(sm) {
+      flex-basis: calc(100% / 4);
+    }
+    @include media-breakpoint-up(lg) {
+      flex-basis: calc(100% / 9);
+    }
+    &::before {
+      position: relative;
+      content: "";
+      width: 100%;
+      padding-top: 100%; //高さの比率 ÷ 幅の比率 × 100
+      display: block;
+      z-index: 1;
+    }
+    .cont {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      width: calc(100% - 15px);
+      height: calc(100% - 15px);
+      background-color: tint-color($secondary, 90%);
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      .icon {
+        width: 30%;
+        height: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          max-height: 100%;
+          max-width: 100%;
+        }
+      }
+      .title {
+        font-weight: bold;
+        margin: 0;
+        font-size: 10px;
+        margin-top: 1em;
+        letter-spacing: 0.05em;
+      }
+    }
+  }
+}

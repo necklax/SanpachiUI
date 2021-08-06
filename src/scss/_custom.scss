@@ -6,7 +6,9 @@
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
 
+@import "custom/typography";
 @import "custom/breadcrumb";
+@import "custom/link";
 
 // Optional
 @import "~bootstrap/scss/root";

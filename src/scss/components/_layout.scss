@@ -10,3 +10,12 @@
 .brandContainer {
   padding: 0 6%;
 }
+.brandSpace {
+  height: 60px;
+  @include media-breakpoint-up(sm) {
+    height: 90px;
+  }
+  @include media-breakpoint-up(lg) {
+    height: 120px;
+  }
+}

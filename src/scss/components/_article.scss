@@ -2,12 +2,8 @@
   max-width: 800px;
   margin: 0 auto;
   margin-bottom: 36px;
-  padding: 0 1rem;
   @include media-breakpoint-up(sm) {
     margin-bottom: 45px;
-  }
-  @include media-breakpoint-up(sm) {
-    padding: 0;
   }
   .title {
   }

@@ -13098,16 +13098,10 @@ html {
   max-width: 800px;
   margin: 0 auto;
   margin-bottom: 36px;
-  padding: 0 1rem;
 }
 @media (min-width: 576px) {
   .articleHeader {
     margin-bottom: 45px;
-  }
-}
-@media (min-width: 576px) {
-  .articleHeader {
-    padding: 0;
   }
 }
 .articleHeader .data {
@@ -13153,6 +13147,7 @@ html {
   max-width: 800px;
   margin: 0 auto;
   font-size: 15px;
+  padding-bottom: 60px;
 }
 .articleBody .leadArea {
   font-size: 18px;

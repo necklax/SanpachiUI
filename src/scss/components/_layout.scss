@@ -19,3 +19,18 @@
     height: 120px;
   }
 }
+.magazineCont {
+  max-width: 1200px;
+  margin: 0 auto;
+  @include media-breakpoint-up(lg) {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    .mainCont {
+      width: 800px;
+    }
+    .sideCont {
+      width: 320px;
+    }
+  }
+}

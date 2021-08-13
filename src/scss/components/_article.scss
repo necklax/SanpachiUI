@@ -1,0 +1,211 @@
+.articleHeader {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 36px;
+  padding: 0 1rem;
+  @include media-breakpoint-up(sm) {
+    margin-bottom: 45px;
+  }
+  @include media-breakpoint-up(sm) {
+    padding: 0;
+  }
+  .title {
+  }
+  .data {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    .post-categories {
+      display: flex;
+      align-items: center;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      font-size: 14px;
+      li {
+        margin-right: 1rem;
+        a {
+          padding: 3px 15px;
+          background-color: $white;
+          border: 1px solid $border-color;
+          color: $secondary;
+          text-decoration: none;
+          transition: $transition-base;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: $border-radius;
+          &:hover {
+            color: $white;
+            background-color: $secondary;
+          }
+        }
+      }
+    }
+    .date {
+      font-weight: bold;
+      margin-right: 1rem;
+      color: $secondary;
+      font-size: 12px;
+    }
+  }
+}
+.articleBody {
+  max-width: 800px;
+  margin: 0 auto;
+  $cms-space: 30px;
+  font-size: 15px;
+  .leadArea {
+    font-size: 18px;
+  }
+  .tags {
+    margin-bottom: $cms-space;
+    color: $secondary;
+    display: flex;
+    justify-content: flex-start;
+    a {
+      display: flex;
+      color: $secondary;
+      text-decoration: none;
+      transition: $transition-base;
+      margin-right: 15px;
+      &::before {
+        content: "#";
+      }
+    }
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  h2,
+  h3,
+  h4,
+  h5 {
+    line-height: 1.5;
+    margin-bottom: $cms-space;
+    margin-top: $cms-space * 2;
+  }
+  p {
+    margin-bottom: $cms-space;
+    line-height: 2;
+  }
+  ul,
+  ol {
+    margin-bottom: $cms-space;
+  }
+}
+.articleFooter {
+  max-width: 800px;
+  margin: 0 auto;
+  border-top: 1px solid $border-color;
+  display: grid;
+  grid-template:
+    "... ... ..." 20px
+    "prev ... next" 40px
+    "... ... ..." 20px
+    "index index index" 40px
+    / 45% 1fr 45%;
+  @include media-breakpoint-up(sm) {
+    grid-template:
+      "prev index next" 90px
+      / 30% 1fr 30%;
+  }
+  .prev {
+    grid-area: prev;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+      .icon {
+        transition: $transition-base;
+        margin-right: 1rem;
+      }
+      &:hover {
+        .icon {
+          transform: translateX(-3px);
+        }
+      }
+    }
+  }
+  .index {
+    grid-area: index;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include media-breakpoint-up(sm) {
+      &::before {
+        background-color: $border-color;
+        width: 1px;
+        height: 30px;
+        content: "";
+      }
+      &::after {
+        background-color: $border-color;
+        width: 1px;
+        height: 30px;
+        content: "";
+      }
+    }
+    a {
+      .icon {
+        width: 24px;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $body-color;
+        border-radius: 50%;
+        transition: $transition-base;
+        margin-left: 1rem;
+      }
+      &:hover {
+        .icon {
+          background-color: $body-color;
+          color: $white;
+        }
+      }
+    }
+  }
+  .next {
+    grid-area: next;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+      .icon {
+        transition: $transition-base;
+        margin-left: 1rem;
+      }
+      &:hover {
+        .icon {
+          transform: translateX(3px);
+        }
+      }
+    }
+  }
+  a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    color: $body-color;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    transition: $transition-base;
+    padding: 20px;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    font-size: 12px;
+    @include media-breakpoint-up(sm) {
+      border: none;
+      border-radius: 0;
+      font-size: 14px;
+    }
+    &:hover {
+      text-decoration: none;
+      background-color: $table-hover-bg;
+    }
+  }
+}

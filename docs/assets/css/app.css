@@ -13190,6 +13190,7 @@ html {
 .articleBody ul,
 .articleBody ol {
   margin-bottom: 30px;
+  line-height: 1.75;
 }
 
 .articleFooter {

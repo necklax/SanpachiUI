@@ -8,7 +8,7 @@
   }
 }
 .brandContainer {
-  padding: 0 6%;
+  padding: 0 6vw;
 }
 .brandSpace {
   height: 60px;
@@ -22,6 +22,15 @@
 .magazineCont {
   max-width: 1200px;
   margin: 0 auto;
+  .sideCont {
+    margin-top: 60px;
+    @include media-breakpoint-up(sm) {
+      margin-top: 90px;
+    }
+    @include media-breakpoint-up(lg) {
+      margin-top: 0;
+    }
+  }
   @include media-breakpoint-up(lg) {
     display: flex;
     justify-content: space-between;

@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <title>article</title>
+    <title>article & side</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script
       src="https://kit.fontawesome.com/f137fce928.js"
@@ -16,7 +16,9 @@
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html">index</a></li>
-            <li class="breadcrumb-item active" aria-current="page">article</li>
+            <li class="breadcrumb-item active" aria-current="page">
+              article & side
+            </li>
           </ol>
         </nav>
       </div>
@@ -122,7 +124,48 @@
                 </div>
               </div>
             </article>
-            <div class="sideCont"></div>
+            <div class="sideCont">
+              <div class="row g-5">
+                <div class="col-12 col-sm-4 col-lg-12">
+                  <p class="fw-bold fs-5">カテゴリ</p>
+                  <ul class="sideMenu">
+                    <li><a href="#">カテゴリ名</a></li>
+                    <li><a href="#">カテゴリ名</a></li>
+                    <li><a href="#">カテゴリ名</a></li>
+                    <li><a href="#">カテゴリ名</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-sm-4 col-lg-12">
+                  <p class="fw-bold fs-5">タグ</p>
+                  <ul class="tagCloud">
+                    <li><a href="#">タグ</a></li>
+                    <li><a href="#">タグタグ</a></li>
+                    <li><a href="#">タグタグタグ</a></li>
+                    <li><a href="#">タグタグタグ</a></li>
+                    <li><a href="#">タグた</a></li>
+                    <li><a href="#">タグ</a></li>
+                    <li><a href="#">タグタグ</a></li>
+                    <li><a href="#">タグタグタグ</a></li>
+                    <li><a href="#">タグた</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-sm-4 col-lg-12">
+                  <p class="fw-bold fs-5">関連記事</p>
+                  <ul class="narrowThumbnailLink">
+                    <li v-for="i in 4">
+                      <a href="#">
+                        <div class="img">
+                          <img src="assets/img/img_1618_1.png" alt="" />
+                        </div>
+                        <div class="cont">
+                          ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

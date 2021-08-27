@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>imgList imgLink</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/f137fce928.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="assets/css/app.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="componentTitle">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">index</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              imgList imgLink
+            </li>
+          </ol>
+        </nav>
+      </div>
+      <section class="widelayout">
+        <div class="brandContainer">
+          <h2 class="mb-5">imgList</h2>
+          <div class="row g-5">
+            <div class="col-lg-4 col-sm-6" v-for="i in 3">
+              <div class="imgList">
+                <div class="img ratio ratio-golden">
+                  <img
+                    src="assets/img/img_1618_1.png"
+                    srcset="
+                      assets/img/img_1618_1@2x.png 2x,
+                      assets/img/img_1618_1@3x.png 3x
+                    "
+                  />
+                </div>
+                <p class="title">
+                  テキストが入ります 18px 行間27px
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="widelayout">
+        <div class="brandContainer">
+          <h2 class="mb-5">imgLink</h2>
+          <div class="row g-5">
+            <div class="col-lg-4 col-sm-6" v-for="i in 3">
+              <a href="#" class="imgLink">
+                <div class="img ratio ratio-golden">
+                  <img
+                    src="assets/img/img_1618_1.png"
+                    srcset="
+                      assets/img/img_1618_1@2x.png 2x,
+                      assets/img/img_1618_1@3x.png 3x
+                    "
+                  />
+                </div>
+                <p class="title">
+                  テキストが入ります 18px 行間27px
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

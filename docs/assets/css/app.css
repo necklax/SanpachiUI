@@ -22,6 +22,15 @@
   transform: translateX(2px);
 }
 
+.ratio img.cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.ratio img.contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -8187,6 +8196,14 @@ textarea.form-control-lg {
   --bs-aspect-ratio: calc(9 / 21 * 100%);
 }
 
+.ratio-golden {
+  --bs-aspect-ratio: calc(1 / 1.618 * 100%);
+}
+
+.ratio-silver {
+  --bs-aspect-ratio: calc(1 / 1.414 * 100%);
+}
+
 .fixed-top {
   position: fixed;
   top: 0;
@@ -13465,6 +13482,76 @@ html {
 }
 .narrowThumbnailLink li a:hover .img img {
   transform: scale(1.05);
+}
+
+.imgList .img,
+.imgLink .img {
+  overflow: hidden;
+}
+.imgList .img img,
+.imgLink .img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.imgList .title,
+.imgLink .title {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 0;
+  margin-top: 15px;
+}
+@media (min-width: 576px) {
+  .imgList .title,
+.imgLink .title {
+    font-size: 18px;
+  }
+}
+
+.imgLink {
+  text-decoration: none;
+  display: block;
+}
+.imgLink .img {
+  position: relative;
+}
+.imgLink .img img {
+  position: absolute;
+  z-index: 1;
+  transition: all 0.2s ease-in-out;
+}
+.imgLink .img::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  font-family: "Font Awesome 5 Pro";
+  content: "";
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #212529;
+  color: #fff;
+  font-size: 12px;
+  transition: all 0.2s ease-in-out;
+}
+.imgLink .title {
+  color: #212529;
+  transition: all 0.2s ease-in-out;
+}
+.imgLink:hover .img {
+  position: relative;
+}
+.imgLink:hover .img img {
+  transform: scale(1.05);
+}
+.imgLink:hover .img::after {
+  background-color: #0d6efd;
+}
+.imgLink:hover .title {
+  color: #0d6efd;
 }
 
 /*# sourceMappingURL=app.css.map*/

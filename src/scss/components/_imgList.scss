@@ -1,0 +1,66 @@
+.imgList,
+.imgLink {
+  .img {
+    overflow: hidden;
+    img {
+      object-fit: cover;
+    }
+  }
+  .title {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 0;
+    margin-top: 15px;
+    @include media-breakpoint-up(sm) {
+      font-size: 18px;
+    }
+  }
+}
+.imgLink {
+  text-decoration: none;
+  display: block;
+  .img {
+    position: relative;
+    img {
+      position: absolute;
+      z-index: 1;
+      transition: $transition-base;
+    }
+    &::after {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 2;
+      font-family: "Font Awesome 5 Pro";
+      content: "\f054";
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $body-color;
+      color: $white;
+      font-size: 12px;
+      transition: $transition-base;
+    }
+  }
+  .title {
+    color: $body-color;
+    transition: $transition-base;
+  }
+  &:hover {
+    .img {
+      position: relative;
+      img {
+        transform: scale(1.05);
+      }
+      &::after {
+        background-color: $primary;
+      }
+    }
+    .title {
+      color: $primary;
+    }
+  }
+}

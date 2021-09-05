@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>carouselSideScrolling</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/f137fce928.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="assets/css/app.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="componentTitle">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">index</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              carouselSideScrolling
+            </li>
+          </ol>
+        </nav>
+      </div>
+      <section class="widelayout">
+        <div class="brandContainer pe-0">
+          <div class="swiper carouselSideScrolling">
+            <div class="swiperHeader">
+              <h3 class="title">タイトルが入ります。</h3>
+              <div class="controller">
+                <div class="prev"><i class="fal fa-chevron-left"></i></div>
+                <div class="next"><i class="fal fa-chevron-right"></i></div>
+              </div>
+            </div>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" v-for="i in 7">
+                <div class="summary">
+                  <a href="#" class="thumbnail">
+                    <img
+                      src="assets/img/img_1618_1.png"
+                      srcset="
+                        assets/img/img_1618_1@2x.png 2x,
+                        assets/img/img_1618_1@3x.png 3x
+                      "
+                    />
+                  </a>
+                  <p class="title">
+                    <a href="#"
+                      >世界で最も小さく、薄く、軽い、5Gスマートフォン、登場。</a
+                    >
+                  </p>
+                  <p class="text">
+                    スマートフォンで最速のA14
+                    Bionicチップ。エッジからエッジまで広がるOLEDディスプレイ。どのカメラでも使えるナイトモード。そのすべてを2つの完璧なサイズで。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

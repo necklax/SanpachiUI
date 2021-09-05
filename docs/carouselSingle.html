@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>carouselSingle</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/f137fce928.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="assets/css/app.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="componentTitle">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">index</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              carouselSingle
+            </li>
+          </ol>
+        </nav>
+      </div>
+      <section class="widelayout">
+        <div class="contentsContainer">
+          <div class="swiper carouselSingle">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" v-for="i in 7">
+                <a href="#" class="d-block ratio ratio-golden">
+                  <img src="assets/img/img_1618_1@3x.png" class="cover" />
+                </a>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>carouselCentering</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/f137fce928.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="assets/css/app.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="componentTitle">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">index</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              carouselCentering
+            </li>
+          </ol>
+        </nav>
+      </div>
+      <section class="widelayout">
+        <div class="brandContainer">
+          <div class="swiper carouselCentering">
+            <div class="swiperHeader">
+              <h3 class="title">タイトルが入ります。</h3>
+              <div class="controller">
+                <div class="prev"><i class="fal fa-chevron-left"></i></div>
+                <div class="next"><i class="fal fa-chevron-right"></i></div>
+              </div>
+            </div>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" v-for="i in 7">
+                <a href="#" class="d-block ratio ratio-golden">
+                  <img src="assets/img/img_1618_1@3x.png" class="cover" />
+                </a>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

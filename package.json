@@ -28,6 +28,7 @@
     "hard-source-webpack-plugin": "^0.13.1",
     "mini-css-extract-plugin": "^2.2.2",
     "postcss-100vh-fix": "^1.0.2",
+    "swiper": "^7.0.3",
     "vue": "^2.6.14",
     "vue-dragscroll": "^3.0.0",
     "vue-loader": "^15.9.8",

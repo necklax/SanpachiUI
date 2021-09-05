@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>carouselCover</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/f137fce928.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="assets/css/app.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="componentTitle">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">index</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              carouselCover
+            </li>
+          </ol>
+        </nav>
+      </div>
+      <section class="widelayout">
+        <div class="swiper carouselCover">
+          <div class="swiper-wrapper">
+            <template v-for="i in 4">
+              <div class="swiper-slide">
+                <a href="#" class="carouselCoverSingle">
+                  <div class="bar"></div>
+                  <div class="bg">
+                    <img src="assets/img/img_1618_1@3x.png" />
+                  </div>
+                  <div class="cont">
+                    タイトルが入ります
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="carouselCoverSingle">
+                  <div class="bar"></div>
+                  <div class="bg">
+                    <img src="assets/img/img_4_3@3x.png" />
+                  </div>
+                  <div class="cont">
+                    フェードアニメーション
+                  </div>
+                </a>
+              </div>
+            </template>
+            <div class="fraction-pagination"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

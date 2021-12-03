@@ -20,7 +20,8 @@
   }
 }
 .contentsContainer {
-  max-width: 800px;
+  max-width: calc(800px + 12vw);
+  padding: 0 6vw;
   margin: 0 auto;
 }
 .magazineCont {
@@ -46,4 +47,7 @@
       width: 320px;
     }
   }
+}
+.bg-gray {
+  background-color: $gray-100;
 }

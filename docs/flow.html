@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>flow</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/f137fce928.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="assets/css/app.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="componentTitle">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">index</a></li>
+            <li class="breadcrumb-item active" aria-current="page">flow</li>
+          </ol>
+        </nav>
+      </div>
+      <section class="widelayout bg-gray">
+        <div class="contentsContainer">
+          <div class="flow">
+            <div class="flowSingle" v-for="i in 6">
+              <div class="number">
+                <div class="text">step</div>
+                <div class="icon">01</div>
+              </div>
+              <h3 class="title">見出しが入ります。</h3>
+              <div class="cont">
+                <p>
+                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+                </p>
+                <div class="text-center text-sm-start">
+                  <a href="#" class="btn btn-danger">テキストリンク</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

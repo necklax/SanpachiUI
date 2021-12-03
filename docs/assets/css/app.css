@@ -14242,4 +14242,89 @@ html {
   line-height: 2;
 }
 
+.faq .faqSingle {
+  margin-bottom: 10px;
+}
+.faq .faqSingle:last-child {
+  margin-bottom: 0;
+}
+.faq .faqSingle .header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  color: #212529;
+  text-decoration: none;
+  width: 100%;
+  padding: 15px;
+  background-color: #f8f9fa;
+}
+@media (min-width: 576px) {
+  .faq .faqSingle .header {
+    padding: 30px;
+  }
+}
+.faq .faqSingle .header .icon {
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+@media (min-width: 576px) {
+  .faq .faqSingle .header .icon {
+    font-size: 20px;
+  }
+}
+.faq .faqSingle .header .title {
+  flex: 1;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0;
+}
+@media (min-width: 576px) {
+  .faq .faqSingle .header .title {
+    font-size: 18px;
+  }
+}
+.faq .faqSingle .header.collapsed::after {
+  transform: rotate(0);
+  font-size: 18px;
+  align-self: center;
+  margin-left: 10px;
+  font-family: "Font Awesome 5 Pro";
+  content: "\f067";
+  transition: all 0.2s ease-in-out;
+}
+.faq .faqSingle .header::after {
+  transform: rotate(45deg);
+  font-size: 16px;
+  align-self: center;
+  margin-left: 10px;
+  font-family: "Font Awesome 5 Pro";
+  content: "\f067";
+  transition: all 0.2s ease-in-out;
+}
+.faq .faqSingle .body {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  color: #212529;
+  text-decoration: none;
+  width: 100%;
+  padding: 15px;
+  background-color: #f8f9fa;
+  margin-top: 1px;
+}
+@media (min-width: 576px) {
+  .faq .faqSingle .body {
+    padding: 30px;
+  }
+}
+.faq .faqSingle .body .icon {
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.faq .faqSingle .body .cont {
+  line-height: 2;
+}
+
 /*# sourceMappingURL=app.css.map*/

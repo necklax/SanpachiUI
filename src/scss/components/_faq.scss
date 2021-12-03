@@ -1,0 +1,80 @@
+.faq {
+  .faqSingle {
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      color: $body-color;
+      text-decoration: none;
+      width: 100%;
+      padding: 15px;
+      background-color: $gray-100;
+      @include media-breakpoint-up(sm) {
+        padding: 30px;
+      }
+      .icon {
+        font-size: 16px;
+        font-weight: bold;
+        margin-right: 10px;
+        @include media-breakpoint-up(sm) {
+          font-size: 20px;
+        }
+      }
+      .title {
+        flex: 1;
+        font-size: 15px;
+        font-weight: bold;
+        margin: 0;
+        @include media-breakpoint-up(sm) {
+          font-size: 18px;
+        }
+      }
+      &.collapsed {
+        &::after {
+          transform: rotate(0);
+          font-size: 18px;
+          align-self: center;
+          margin-left: 10px;
+          font-family: "Font Awesome 5 Pro";
+          content: "\f067";
+          transition: $transition-base;
+        }
+      }
+      &::after {
+        transform: rotate(45deg);
+        font-size: 16px;
+        align-self: center;
+        margin-left: 10px;
+        font-family: "Font Awesome 5 Pro";
+        content: "\f067";
+        transition: $transition-base;
+      }
+    }
+    .body {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      color: $body-color;
+      text-decoration: none;
+      width: 100%;
+      padding: 15px;
+      background-color: $gray-100;
+      margin-top: 1px;
+      @include media-breakpoint-up(sm) {
+        padding: 30px;
+      }
+      .icon {
+        font-size: 16px;
+        font-weight: bold;
+        margin-right: 10px;
+      }
+      .cont {
+        line-height: 2;
+      }
+    }
+  }
+}

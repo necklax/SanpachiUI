@@ -1,5 +1,6 @@
 import "../scss/app.scss";
 import Vue from "vue";
+import "bootstrap";
 const carousels = require("./carousels");
 
 const app = new Vue({

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>formTable</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/f137fce928.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="assets/css/app.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="componentTitle">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">index</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              formTable
+            </li>
+          </ol>
+        </nav>
+      </div>
+      <section class="widelayout">
+        <div class="brandContainer">
+          <div class="formTable">
+            <dl>
+              <dt><span class="badge bg-danger">必須</span>お名前</dt>
+              <dd>
+                <input
+                  type="text"
+                  name="name1"
+                  class="form-control"
+                  size="60"
+                  value=""
+                />
+              </dd>
+            </dl>
+            <dl>
+              <dt><span class="badge bg-danger">必須</span>フリガナ</dt>
+              <dd>
+                <input
+                  type="text"
+                  name="name2"
+                  class="form-control"
+                  size="60"
+                  value=""
+                />
+              </dd>
+            </dl>
+            <dl>
+              <dt><span class="badge bg-danger">必須</span>お電話番号</dt>
+              <dd>
+                <input
+                  type="text"
+                  name="phone"
+                  class="form-control"
+                  size="60"
+                  value=""
+                />
+              </dd>
+            </dl>
+            <dl>
+              <dt><span class="badge bg-danger">必須</span>メールアドレス</dt>
+              <dd>
+                <input
+                  type="email"
+                  name="mail"
+                  class="form-control"
+                  size="60"
+                  value=""
+                  placeholder=""
+                  data-conv-half-alphanumeric="true"
+                />
+              </dd>
+            </dl>
+            <dl>
+              <dt><span class="badge bg-danger">必須</span>本文</dt>
+              <dd>
+                <textarea
+                  name="body"
+                  class="form-control"
+                  cols="50"
+                  rows="8"
+                ></textarea>
+              </dd>
+            </dl>
+          </div>
+          <div class="text-center mt-5">
+            <input
+              type="submit"
+              name="submitConfirm"
+              value="確認画面へ"
+              class="btn btn-primary btn-lg"
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

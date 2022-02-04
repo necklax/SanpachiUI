@@ -14167,6 +14167,124 @@ html {
   transform: scaleX(1);
 }
 
+.formTable {
+  border-top: 1px solid #dee2e6;
+  font-size: 12px;
+  width: 100%;
+}
+.formTable dl {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.formTable dl dt {
+  display: block;
+  font-weight: bold;
+  text-align: left;
+  padding: 15px 0;
+  margin: 0;
+}
+.formTable dl dt .badge {
+  padding: 10px 15px;
+  margin-right: 10px;
+}
+.formTable dl dd {
+  display: block;
+  text-align: left;
+  border-bottom: 1px solid #dee2e6;
+  padding: 0 0 15px;
+  margin: 0;
+}
+@media (min-width: 576px) {
+  .formTable {
+    font-size: 15px;
+    display: table;
+  }
+  .formTable dl {
+    display: table-row;
+  }
+  .formTable dl dt {
+    display: table-cell;
+    padding: 20px 0;
+    width: 1%;
+    white-space: nowrap;
+    border-bottom: 1px solid #dee2e6;
+  }
+  .formTable dl dd {
+    display: table-cell;
+    padding: 20px 0;
+    padding-left: 20px;
+    border-bottom: 1px solid #dee2e6;
+  }
+  .formTable dl dd .form-control,
+.formTable dl dd .form-select {
+    margin: 0;
+  }
+}
+
+.brandTable {
+  display: table;
+  width: 100%;
+  font-size: 14px;
+}
+@media (min-width: 576px) {
+  .brandTable {
+    font-size: 15px;
+  }
+}
+.brandTable dl {
+  display: table-row;
+  margin: 0;
+  padding: 0;
+}
+.brandTable dl dt {
+  display: table-cell;
+  margin: 0;
+  padding: 20px 0;
+  padding-right: 20px;
+  border-top: 1px solid #0d6efd;
+  white-space: nowrap;
+  width: 1%;
+}
+.brandTable dl dd {
+  display: table-cell;
+  margin: 0;
+  padding: 20px 0;
+  padding-left: 20px;
+  border-top: 1px solid rgba(33, 37, 41, 0.2);
+}
+.brandTable dl:last-child dt {
+  border-bottom: 1px solid #0d6efd;
+}
+.brandTable dl:last-child dd {
+  border-bottom: 1px solid rgba(33, 37, 41, 0.2);
+}
+@media (max-width: 575.98px) {
+  .brandTable.responsive {
+    display: block;
+  }
+  .brandTable.responsive dl {
+    display: block;
+  }
+  .brandTable.responsive dl dt {
+    display: block;
+    padding: 15px 0;
+    width: 100%;
+  }
+  .brandTable.responsive dl dd {
+    display: block;
+    padding: 15px 0;
+    border-top: 1px dashed rgba(33, 37, 41, 0.2);
+    width: 100%;
+  }
+  .brandTable.responsive dl:last-child dt {
+    border-bottom: 0;
+  }
+  .brandTable.responsive dl:last-child dd {
+    border-bottom: 0;
+  }
+}
+
 .flow .flowSingle {
   background-color: #fff;
   padding: 25px;
@@ -14325,6 +14443,110 @@ html {
 }
 .faq .faqSingle .body .cont {
   line-height: 2;
+}
+
+/* アニメーション中のスタイル */
+.opening-leave-active,
+.opening-enter-active {
+  transition: all 1s linear;
+}
+
+/* 表示アニメーション */
+.opening-enter {
+  opacity: 0;
+}
+
+.opening-enter-to {
+  opacity: 1;
+}
+
+/* 非表示アニメーション */
+.opening-leave {
+  opacity: 1;
+}
+
+.opening-leave-to {
+  opacity: 0;
+}
+
+/* アニメーション中のスタイル */
+.fadeInOut-leave-active,
+.fadeInOut-enter-active {
+  transition: all 0.2s ease-in-out;
+}
+
+/* 表示アニメーション */
+.fadeInOut-enter {
+  opacity: 0;
+}
+
+.fadeInOut-enter-to {
+  opacity: 1;
+}
+
+/* 非表示アニメーション */
+.fadeInOut-leave {
+  opacity: 1;
+}
+
+.fadeInOut-leave-to {
+  opacity: 0;
+}
+
+/* アニメーション中のスタイル */
+.fadeRightLeft-leave-active,
+.fadeRightLeft-enter-active {
+  transition: all 0.2s ease-in-out;
+}
+
+/* 表示アニメーション */
+.fadeRightLeft-enter {
+  opacity: 0;
+  transform: translateX(10px);
+}
+
+.fadeRightLeft-enter-to {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* 非表示アニメーション */
+.fadeRightLeft-leave {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fadeRightLeft-leave-to {
+  opacity: 0;
+  transform: translateX(-10px);
+}
+
+/* アニメーション中のスタイル */
+.fadeTopBottom-leave-active,
+.fadeTopBottom-enter-active {
+  transition: all 0.2s ease-in-out;
+}
+
+/* 表示アニメーション */
+.fadeTopBottom-enter {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.fadeTopBottom-enter-to {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 非表示アニメーション */
+.fadeTopBottom-leave {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fadeTopBottom-leave-to {
+  opacity: 0;
+  transform: translateY(-10px);
 }
 
 /*# sourceMappingURL=app.css.map*/

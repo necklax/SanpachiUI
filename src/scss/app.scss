@@ -22,6 +22,7 @@ html {
   }
 }
 
+@import "components/header";
 @import "components/layout";
 @import "components/summary";
 @import "components/outline";
@@ -33,5 +34,9 @@ html {
 @import "components/narrowThumbnailLink";
 @import "components/imgList";
 @import "components/carousels";
+@import "components/formTable";
+@import "components/brandTable";
 @import "components/flow";
 @import "components/faq";
+@import "components/footer";
+@import "components/vif";

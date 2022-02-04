@@ -1,0 +1,99 @@
+////////////////////////////
+// opening
+////////////////////////////
+/* アニメーション中のスタイル */
+.opening-leave-active,
+.opening-enter-active {
+  transition: all 1s linear;
+}
+/* 表示アニメーション */
+.opening-enter {
+  opacity: 0;
+}
+.opening-enter-to {
+  opacity: 1;
+}
+/* 非表示アニメーション */
+.opening-leave {
+  opacity: 1;
+}
+.opening-leave-to {
+  opacity: 0;
+}
+
+////////////////////////////
+// fadeInOut
+////////////////////////////
+/* アニメーション中のスタイル */
+.fadeInOut-leave-active,
+.fadeInOut-enter-active {
+  transition: $transition-base;
+}
+/* 表示アニメーション */
+.fadeInOut-enter {
+  opacity: 0;
+}
+.fadeInOut-enter-to {
+  opacity: 1;
+}
+/* 非表示アニメーション */
+.fadeInOut-leave {
+  opacity: 1;
+}
+.fadeInOut-leave-to {
+  opacity: 0;
+}
+
+////////////////////////////
+// fadeRightLeft
+////////////////////////////
+/* アニメーション中のスタイル */
+.fadeRightLeft-leave-active,
+.fadeRightLeft-enter-active {
+  transition: $transition-base;
+}
+/* 表示アニメーション */
+.fadeRightLeft-enter {
+  opacity: 0;
+  transform: translateX(10px);
+}
+.fadeRightLeft-enter-to {
+  opacity: 1;
+  transform: translateX(0);
+}
+/* 非表示アニメーション */
+.fadeRightLeft-leave {
+  opacity: 1;
+  transform: translateX(0);
+}
+.fadeRightLeft-leave-to {
+  opacity: 0;
+  transform: translateX(-10px);
+}
+
+////////////////////////////
+// fadeTopBottom
+////////////////////////////
+/* アニメーション中のスタイル */
+.fadeTopBottom-leave-active,
+.fadeTopBottom-enter-active {
+  transition: $transition-base;
+}
+/* 表示アニメーション */
+.fadeTopBottom-enter {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+.fadeTopBottom-enter-to {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* 非表示アニメーション */
+.fadeTopBottom-leave {
+  opacity: 1;
+  transform: translateY(0);
+}
+.fadeTopBottom-leave-to {
+  opacity: 0;
+  transform: translateY(-10px);
+}

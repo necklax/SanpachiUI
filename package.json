@@ -35,6 +35,11 @@
     "vue-template-compiler": "^2.6.14"
   },
   "devDependencies": {
+    "dns-packet": ">=1.3.2",
+    "follow-redirects": ">=1.14.7",
+    "shelljs": ">=0.8.5",
+    "glob-parent": ">=5.1.2",
+    "axios": ">=0.21.2",
     "node-fetch": ">=2.6.7",
     "@webpack-cli/generators": "^2.3.0",
     "autoprefixer": "^10.3.4",

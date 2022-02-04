@@ -33338,7 +33338,7 @@ const carousels = __webpack_require__(/*! ./carousels */ "./src/js/carousels.js"
 const app = new vue__WEBPACK_IMPORTED_MODULE_2__["default"]({
   el: "#app",
   data: {
-    test: "テスト2",
+    isToggleMenu: false,
   },
   mounted() {
     carousels.carouselSingle();

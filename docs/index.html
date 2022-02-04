@@ -19,6 +19,39 @@
           </ol>
         </nav>
       </div>
+      <nav class="toggleMenu">
+        <div
+          class="toggleMenuBtn"
+          @click="isToggleMenu =! isToggleMenu"
+          :class="{ active: isToggleMenu }"
+        >
+          <div class="bar"></div>
+        </div>
+        <transition name="fadeRightLeft">
+          <div class="cont" v-if="isToggleMenu" v-cloak>
+            <ul class="gnav">
+              <li><a href="#">メニュー</a></li>
+              <li><a href="#">メニュー</a></li>
+              <li>
+                <a href="#">メニュー</a>
+                <ul>
+                  <li><a href="#">サブメニュー</a></li>
+                  <li><a href="#">サブメニュー</a></li>
+                  <li><a href="#">サブメニュー</a></li>
+                </ul>
+              </li>
+              <li><a href="#">メニュー</a></li>
+              <li><a href="#">メニュー</a></li>
+              <li><a href="#">メニュー</a></li>
+            </ul>
+            <div class="p-4">
+              <a href="#" class="btn btn-primary rounded-pill w-100"
+                ><i class="fal fa-envelope"></i> お問い合わせ</a
+              >
+            </div>
+          </div>
+        </transition>
+      </nav>
       <section class="widelayout">
         <div class="brandContainer">
           <div class="list-group">

@@ -6,7 +6,7 @@ const carousels = require("./carousels");
 const app = new Vue({
   el: "#app",
   data: {
-    test: "テスト2",
+    isToggleMenu: false,
   },
   mounted() {
     carousels.carouselSingle();

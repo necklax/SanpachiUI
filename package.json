@@ -23,6 +23,7 @@
   "homepage": "https://github.com/necklax/SanpachiUI#readme",
   "dependencies": {
     "@popperjs/core": "^2.11.5",
+    "@vue/compiler-sfc": "^3.2.31",
     "bootstrap": "^5.1.3",
     "gsap": "^3.10.2",
     "hard-source-webpack-plugin": "^0.13.1",

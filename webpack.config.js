@@ -1,5 +1,5 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const VueLoaderPlugin = require("vue-loader/lib/plugin");
+const { VueLoaderPlugin } = require("vue-loader");
 
 const path = require("path");
 
@@ -24,6 +24,10 @@ const config = {
     new MiniCssExtractPlugin({
       // ファイル名を設定します
       filename: "css/app.css",
+    }),
+    new webpack.DefinePlugin({
+      __VUE_OPTIONS_API__: true,
+      __VUE_PROD_DEVTOOLS__: false,
     }),
   ],
   devtool: "source-map",

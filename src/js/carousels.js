@@ -4,7 +4,7 @@ import "swiper/css/bundle";
 export function carouselSingle() {
   const swiperList = document.querySelectorAll(".carouselSingle");
   swiperList.forEach(function (userItem) {
-    new Swiper("userItem", {
+    new Swiper(userItem, {
       loop: true,
       speed: 900,
       pagination: {

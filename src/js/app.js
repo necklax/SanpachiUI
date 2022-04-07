@@ -1,12 +1,12 @@
 import "../scss/app.scss";
-import { createApp } from "vue";
+import Vue from "vue";
 import "bootstrap";
 const carousels = require("./carousels");
 
-const app = createApp({
-  setup() {
-    const isToggleMenu = ref(false);
-    return { isToggleMenu };
+const app = new Vue({
+  el: "#app",
+  data: {
+    isToggleMenu: false,
   },
   mounted() {
     carousels.carouselSingle();
@@ -16,4 +16,3 @@ const app = createApp({
     carousels.carouselCover();
   },
 });
-app.mount("#app");

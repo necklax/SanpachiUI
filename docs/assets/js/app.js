@@ -8668,7 +8668,6 @@ function apply(styleElement, options, obj) {
 
   if (obj.media) {
     css += "@media ".concat(obj.media, " {");
-<<<<<<< Updated upstream
   }
 
   var needLayer = typeof obj.layer !== "undefined";
@@ -8687,26 +8686,6 @@ function apply(styleElement, options, obj) {
     css += "}";
   }
 
-=======
-  }
-
-  var needLayer = typeof obj.layer !== "undefined";
-
-  if (needLayer) {
-    css += "@layer".concat(obj.layer.length > 0 ? " ".concat(obj.layer) : "", " {");
-  }
-
-  css += obj.css;
-
-  if (needLayer) {
-    css += "}";
-  }
-
-  if (obj.media) {
-    css += "}";
-  }
-
->>>>>>> Stashed changes
   if (obj.supports) {
     css += "}";
   }
@@ -20840,7 +20819,7 @@ __webpack_require__.r(__webpack_exports__);
 function carouselSingle() {
   const swiperList = document.querySelectorAll(".carouselSingle");
   swiperList.forEach(function (userItem) {
-    new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"]("userItem", {
+    new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"](userItem, {
       loop: true,
       speed: 900,
       pagination: {
@@ -33850,10 +33829,10 @@ __webpack_require__.r(__webpack_exports__);
 
 const carousels = __webpack_require__(/*! ./carousels */ "./src/js/carousels.js");
 
-const app = (0,vue__WEBPACK_IMPORTED_MODULE_2__.createApp)({
-  setup() {
-    const isToggleMenu = ref(false);
-    return { isToggleMenu };
+const app = new vue__WEBPACK_IMPORTED_MODULE_2__["default"]({
+  el: "#app",
+  data: {
+    isToggleMenu: false,
   },
   mounted() {
     carousels.carouselSingle();
@@ -33863,8 +33842,6 @@ const app = (0,vue__WEBPACK_IMPORTED_MODULE_2__.createApp)({
     carousels.carouselCover();
   },
 });
-app.mount("#app");
-
 })();
 
 /******/ })()

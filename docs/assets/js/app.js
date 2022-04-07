@@ -8668,6 +8668,7 @@ function apply(styleElement, options, obj) {
 
   if (obj.media) {
     css += "@media ".concat(obj.media, " {");
+<<<<<<< Updated upstream
   }
 
   var needLayer = typeof obj.layer !== "undefined";
@@ -8686,6 +8687,26 @@ function apply(styleElement, options, obj) {
     css += "}";
   }
 
+=======
+  }
+
+  var needLayer = typeof obj.layer !== "undefined";
+
+  if (needLayer) {
+    css += "@layer".concat(obj.layer.length > 0 ? " ".concat(obj.layer) : "", " {");
+  }
+
+  css += obj.css;
+
+  if (needLayer) {
+    css += "}";
+  }
+
+  if (obj.media) {
+    css += "}";
+  }
+
+>>>>>>> Stashed changes
   if (obj.supports) {
     css += "}";
   }

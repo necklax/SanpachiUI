@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>newsArchive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/f137fce928.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="assets/css/app.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="componentTitle">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">index</a></li>
+            <li class="breadcrumb-item active" aria-current="page">newsArchive</li>
+          </ol>
+        </nav>
+      </div>
+      <section class="widelayout">
+        <div class="contentsContainer">
+          <ul class="newsArchive">
+            <li v-for="i in 3">
+              <a class="img">
+                <img src="assets/img/img_1618_1.png">
+							</a>
+							<div class="cont">
+								<div class="data">
+									<div class="date">2022.04.04</div>
+									<ul class="post-categories">
+										<li>
+											<a href="#">カテゴリ</a>
+										</li>
+									</ul>	
+								</div>
+								<h3 class="title">
+									<a href="#">
+										記事タイトル記事タイトル記事タイトル記事タイトル記事タイトル記事タイトル
+										記事タイトル記事タイトル記事タイトル記事タイトル記事タイトル記事タイトル
+										記事タイトル記事タ…
+									</a>
+								</h3>
+								<p class="description">
+									本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト
+									本文テ本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト
+									本文テキスト本文テキスト本文テキスト本文
+								</p>
+								<a href="#" class="more">
+									<i class="fal fa-angle-right"></i> もっと見る
+								</a>
+							</div>
+              
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

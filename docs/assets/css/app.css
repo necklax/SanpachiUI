@@ -14601,7 +14601,7 @@ html {
 }
 .newsList li a .cat {
   font-size: 12px;
-  border: 1px solid rgba(119, 119, 119, 0.3);
+  border: 1px solid #dee2e6;
   border-radius: 5px;
   padding: 5px 10px;
   line-height: 1;
@@ -14609,6 +14609,123 @@ html {
 }
 .newsList li a:hover {
   background-color: #f8f9fa;
+}
+
+.newsArchive {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.newsArchive > li {
+  margin-bottom: 40px;
+}
+@media (min-width: 576px) {
+  .newsArchive > li {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+.newsArchive > li .img {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: block;
+}
+@media (min-width: 576px) {
+  .newsArchive > li .img {
+    width: 240px;
+  }
+}
+.newsArchive > li .img::before {
+  content: "";
+  width: 100%;
+  padding-top: 61.42%;
+  display: block;
+}
+.newsArchive > li .img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width: 576px) {
+  .newsArchive > li .cont {
+    margin-left: 35px;
+    flex: 1;
+  }
+}
+.newsArchive > li .cont .data {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+}
+@media (min-width: 576px) {
+  .newsArchive > li .cont .data {
+    margin-top: 0px;
+  }
+}
+.newsArchive > li .cont .data .date {
+  color: #6c757d;
+  font-size: 13px;
+  margin-right: 15px;
+}
+.newsArchive > li .cont .data .post-categories {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.newsArchive > li .cont .data .post-categories li a {
+  font-size: 12px;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  padding: 5px 10px;
+  line-height: 1;
+  white-space: nowrap;
+  text-decoration: none;
+  color: #212529;
+  display: inline-block;
+}
+.newsArchive > li .cont .title {
+  margin-top: 20px;
+  font-size: 15px;
+}
+@media (min-width: 576px) {
+  .newsArchive > li .cont .title {
+    margin-top: 15px;
+  }
+}
+.newsArchive > li .cont .title a {
+  text-decoration: none;
+  color: #212529;
+}
+.newsArchive > li .cont .description {
+  margin-top: 20px;
+  color: #6c757d;
+  font-size: 13px;
+}
+@media (min-width: 576px) {
+  .newsArchive > li .cont .description {
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
+}
+.newsArchive > li .cont .more {
+  text-decoration: none;
+  color: #212529;
+  font-size: 14px;
+  display: inline-block;
+}
+@media (min-width: 576px) {
+  .newsArchive > li .cont .more {
+    margin-top: 15px;
+  }
 }
 
 [v-cloak] {

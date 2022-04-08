@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>newsList</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/f137fce928.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="assets/css/app.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="componentTitle">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">index</a></li>
+            <li class="breadcrumb-item active" aria-current="page">newsList</li>
+          </ol>
+        </nav>
+      </div>
+      <section class="widelayout">
+        <div class="contentsContainer">
+          <h2 class="text-center mb-5">お知らせ</h2>
+          <ul class="newsList">
+            <li v-for="i in 4">
+              <a href="#">
+                <div class="date">2022.04.04</div>
+                <div class="cat">カテゴリ</div>
+                <div class="title">
+                  タイトルが入ります。タイトルが入ります。
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

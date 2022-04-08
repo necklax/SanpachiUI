@@ -1,26 +1,39 @@
 .newsList {
-    list-style: none;
-    padding-left: 0px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  li {
+    border-bottom: 1px solid $border-color;
     a {
-        display: flex;
-        text-decoration: none;
-        color: #1B1919;
-        margin-bottom: 30px;
-        border-bottom: 1px solid #DEDEDE;
-        padding-bottom: 30px;
-        flex-wrap: wrap;
-        .cat {
-            font-size: 12px;
-            border: 1px solid rgba(119,119,119,.3);
-            border-radius: 5px;
-            padding: 5px 10px;
-        }
-        .title {
-            padding-top: 20px;
-            @include media-breakpoint-up(sm) {
-               padding-top: 0px; 
-            }
-        }
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      text-decoration: none;
+      color: $body-color;
+      padding: 20px 0;
+      flex-wrap: wrap;
+      transition: $transition-base;
+      @include media-breakpoint-up(sm) {
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        padding: 30px 0;
+      }
+      .date {
+        color: $secondary;
+      }
+      .cat {
+        font-size: 12px;
+        border: 1px solid rgba(119, 119, 119, 0.3);
+        border-radius: 5px;
+        padding: 5px 10px;
+        line-height: 1;
+        white-space: nowrap;
+      }
+      .title {
+      }
+      &:hover {
+        background-color: $gray-100;
+      }
     }
-
+  }
 }

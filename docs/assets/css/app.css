@@ -13875,19 +13875,34 @@ html {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 30px;
+  margin-bottom: 30px;
 }
 @media (min-width: 576px) {
   .sectionHeader {
+    margin-bottom: 45px;
     justify-content: space-between;
     align-items: flex-end;
     flex-direction: row;
   }
+}
+@media (min-width: 992px) {
+  .sectionHeader {
+    margin-bottom: 60px;
+  }
+}
+.sectionHeader > .header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
 }
 .sectionHeader > .header .title-en {
   font-family: "Readex Pro", sans-serif;
   font-weight: bold;
   font-size: 30px;
   margin: 0;
+  line-height: 1.2;
 }
 @media (min-width: 576px) {
   .sectionHeader > .header .title-en {
@@ -13896,10 +13911,10 @@ html {
 }
 .sectionHeader > .header .title-ja {
   align-items: center;
-  display: inline-block;
+  justify-content: flex-start;
+  gap: 10px;
+  display: flex;
   font-size: 12px;
-  position: relative;
-  padding: 0 30px;
   margin: 0;
 }
 @media (min-width: 576px) {
@@ -13909,10 +13924,6 @@ html {
 }
 .sectionHeader > .header .title-ja::before, .sectionHeader > .header .title-ja::after {
   content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  display: inline-block;
   width: 21px;
   height: 1px;
   background-color: #000;
@@ -13929,10 +13940,11 @@ html {
     flex-direction: column;
   }
 }
+.sectionHeader.center > .header {
+  align-items: center;
+}
 .sectionHeader.center > .header .title-ja::after {
-  left: auto;
-  right: 0;
-  display: inline-block;
+  display: block;
 }
 
 .coverBgImg {

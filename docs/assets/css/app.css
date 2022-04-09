@@ -13869,20 +13869,27 @@ html {
   background-color: rgba(0, 0, 0, 0.075);
 }
 
-@media (min-width: 992px) {
+.sectionHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+}
+@media (min-width: 576px) {
   .sectionHeader {
-    display: flex;
     justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: row;
   }
 }
 .sectionHeader > .header .title-en {
   font-family: "Readex Pro", sans-serif;
   font-weight: bold;
   font-size: 30px;
-  padding: 0;
   margin: 0;
 }
-@media (min-width: 992px) {
+@media (min-width: 576px) {
   .sectionHeader > .header .title-en {
     font-size: 36px;
   }
@@ -13895,52 +13902,37 @@ html {
   padding: 0 30px;
   margin: 0;
 }
-@media (min-width: 992px) {
+@media (min-width: 576px) {
   .sectionHeader > .header .title-ja {
     font-size: 13px;
   }
 }
-.sectionHeader > .header .title-ja:before {
+.sectionHeader > .header .title-ja::before, .sectionHeader > .header .title-ja::after {
   content: "";
   position: absolute;
   top: 50%;
+  left: 0;
   display: inline-block;
   width: 21px;
   height: 1px;
   background-color: #000;
 }
-.sectionHeader > .header .title-ja:before {
-  left: 0;
-}
-.sectionHeader .footer {
-  padding: 0;
-  margin-top: 30px;
-}
-@media (min-width: 992px) {
-  .sectionHeader .footer {
-    margin: 0;
-  }
+.sectionHeader > .header .title-ja::after {
+  display: none;
 }
 .sectionHeader.center {
   text-align: center;
-  flex-flow: column;
-  gap: 1em;
+  align-items: center;
 }
-.sectionHeader.center > .header .title-ja:before,
-.sectionHeader.center > .header .title-ja:after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  display: inline-block;
-  width: 21px;
-  height: 1px;
-  background-color: #000;
+@media (min-width: 576px) {
+  .sectionHeader.center {
+    flex-direction: column;
+  }
 }
-.sectionHeader.center > .header .title-ja:before {
-  left: 0;
-}
-.sectionHeader.center > .header .title-ja:after {
+.sectionHeader.center > .header .title-ja::after {
+  left: auto;
   right: 0;
+  display: inline-block;
 }
 
 .coverBgImg {

@@ -13947,23 +13947,18 @@ html {
   display: block;
 }
 
-.secondHeader .bg {
+.secondHeader {
   position: relative;
-  width: 100%;
-  overflow: hidden;
 }
-.secondHeader .bg::before {
-  content: "";
-  width: 100%;
-  padding-top: 16%;
-  display: block;
-}
-.secondHeader .bg img {
+.secondHeader .bg {
   position: absolute;
+  width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
-  bottom: 0;
-  right: 0;
+  overflow: hidden;
+}
+.secondHeader .bg img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -13973,26 +13968,34 @@ html {
   background-color: black;
   content: "";
   position: absolute;
+  width: 100%;
+  height: 100%;
   top: 0;
-  right: 0;
   left: 0;
-  bottom: 0;
   opacity: 0.5;
 }
 .secondHeader .cont {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 5vw;
-  margin-top: -20px;
-  width: 1200px;
-  height: 70px;
-  align-items: center;
+  position: relative;
   color: #fff;
+  padding: 60px 6vw;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+}
+@media (min-width: 576px) {
+  .secondHeader .cont {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 70px 6vw;
+  }
+}
+@media (min-width: 1200px) {
+  .secondHeader .cont {
+    padding: 90px 6vw;
+  }
 }
 .secondHeader .cont > .header {
   display: flex;

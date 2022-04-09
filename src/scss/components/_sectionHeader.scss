@@ -1,0 +1,16 @@
+.sectionHeader {
+  > .header {
+    .title-en {
+    }
+    .title-ja {
+    }
+  }
+  > .footer {
+  }
+  &.center {
+    > .header {
+    }
+    > .footer {
+    }
+  }
+}

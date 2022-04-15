@@ -1,0 +1,48 @@
+.newsBar {
+  display: flex;
+  //   justify-content: space-between;
+  align-items: center;
+  background-color: $body-color;
+  .title {
+    border-right: 1px solid $white;
+    p {
+      text-transform: uppercase;
+      margin: auto;
+      padding: 20px;
+      color: $white;
+    }
+  }
+  .cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+      text-decoration: none;
+      color: $body-color;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .date {
+        p {
+          margin: auto;
+          padding: 20px;
+          padding-right: 15px;
+          color: $white;
+        }
+      }
+      .txt {
+        p {
+          margin: auto;
+          color: $white;
+          padding-right: 135px;
+        }
+      }
+    }
+    .more {
+      a {
+        color: $white;
+        opacity: 0.5;
+      }
+    }
+  }
+}

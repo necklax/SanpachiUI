@@ -14774,6 +14774,48 @@ html {
   transform: scale(1.05);
 }
 
+.newsBar {
+  display: flex;
+  align-items: center;
+  background-color: #212529;
+}
+.newsBar .title {
+  border-right: 1px solid #fff;
+}
+.newsBar .title p {
+  text-transform: uppercase;
+  margin: auto;
+  padding: 20px;
+  color: #fff;
+}
+.newsBar .cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.newsBar .cont a {
+  text-decoration: none;
+  color: #212529;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.newsBar .cont a .date p {
+  margin: auto;
+  padding: 20px;
+  padding-right: 15px;
+  color: #fff;
+}
+.newsBar .cont a .txt p {
+  margin: auto;
+  color: #fff;
+  padding-right: 135px;
+}
+.newsBar .cont .more a {
+  color: #fff;
+  opacity: 0.5;
+}
+
 [v-cloak] {
   display: none;
 }

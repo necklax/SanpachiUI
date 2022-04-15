@@ -15103,4 +15103,27 @@ html {
   padding-left: 0;
 }
 
+.widelayout .brandContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+  border-bottom: solid 1px #DEDEDE;
+  gap: 20px;
+}
+.widelayout .brandContainer .anchorlinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6px;
+}
+.widelayout .brandContainer .anchorlinks .dd {
+  color: #1E2124;
+}
+.widelayout .brandContainer .anchorlinks .text {
+  text-decoration: none;
+  color: #1E2124;
+  font-size: 13px;
+}
+
 /*# sourceMappingURL=app.css.map*/

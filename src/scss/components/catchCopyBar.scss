@@ -1,0 +1,36 @@
+.catchCopyBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5px;
+  padding-left: 8vw;
+  margin: 0;
+  @include media-breakpoint-up(lg) {
+    flex-direction: row;
+    gap: 0;
+  }
+  span {
+    padding: 15px 20px;
+    background: #1E2124;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 0.4rem;
+    @include media-breakpoint-up(lg) {
+      font-size: 36px;
+      &:nth-child(1){
+        padding-right: 0;
+      }
+      &:nth-child(2){
+        padding-left: 0;
+      }
+    }
+  }
+  &.center {
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+  }
+}

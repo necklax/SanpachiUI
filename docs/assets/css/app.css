@@ -15026,4 +15026,87 @@ html {
   transform: translateY(-10px);
 }
 
+.catchCopyBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5px;
+  padding-left: 8vw;
+  margin: 0;
+}
+@media (min-width: 992px) {
+  .catchCopyBar {
+    flex-direction: row;
+    gap: 0;
+  }
+}
+.catchCopyBar span {
+  padding: 15px 20px;
+  background: #1E2124;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+  letter-spacing: 0.4rem;
+}
+@media (min-width: 992px) {
+  .catchCopyBar span {
+    font-size: 36px;
+  }
+  .catchCopyBar span:nth-child(1) {
+    padding-right: 0;
+  }
+  .catchCopyBar span:nth-child(2) {
+    padding-left: 0;
+  }
+}
+.catchCopyBar.center {
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+}
+
+.catchCopyBorder {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 25px;
+  padding-left: 8vw;
+  margin: 0;
+}
+@media (min-width: 992px) {
+  .catchCopyBorder {
+    flex-direction: row;
+    gap: 0;
+  }
+}
+.catchCopyBorder span {
+  padding-bottom: 12px;
+  border-bottom: solid 3px #1E2124;
+  color: #1E2124;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+  letter-spacing: 0.4rem;
+}
+@media (min-width: 992px) {
+  .catchCopyBorder span {
+    padding-bottom: 20px;
+    font-size: 36px;
+  }
+  .catchCopyBorder span:nth-child(1) {
+    padding-right: 0;
+  }
+  .catchCopyBorder span:nth-child(2) {
+    padding-left: 0;
+  }
+}
+.catchCopyBorder.center {
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+}
+
 /*# sourceMappingURL=app.css.map*/

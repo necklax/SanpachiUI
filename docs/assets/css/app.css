@@ -14731,6 +14731,25 @@ html {
     margin-top: 15px;
   }
 }
+.newsArchive.allLink li a {
+  text-decoration: none;
+  color: #212529;
+}
+@media (min-width: 576px) {
+  .newsArchive.allLink li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.newsArchive.allLink li a .cont .data .post-categories li {
+  font-size: 12px;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  padding: 5px 10px;
+  line-height: 1;
+  white-space: nowrap;
+}
 
 [v-cloak] {
   display: none;

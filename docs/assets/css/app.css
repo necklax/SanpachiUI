@@ -14657,6 +14657,10 @@ html {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: all 0.2s ease-in-out;
+}
+.newsArchive > li .img:hover img {
+  transform: scale(1.05);
 }
 @media (min-width: 576px) {
   .newsArchive > li .cont {
@@ -14685,7 +14689,8 @@ html {
   margin: 0;
   padding: 0;
 }
-.newsArchive > li .cont .data .post-categories li a {
+.newsArchive > li .cont .data .post-categories li a,
+.newsArchive > li .cont .data .post-categories li span {
   font-size: 12px;
   border: 1px solid #dee2e6;
   border-radius: 5px;
@@ -14695,6 +14700,10 @@ html {
   text-decoration: none;
   color: #212529;
   display: inline-block;
+  transition: all 0.2s ease-in-out;
+}
+.newsArchive > li .cont .data .post-categories li a:hover {
+  background-color: #e9ecef;
 }
 .newsArchive > li .cont .title {
   margin-top: 20px;
@@ -14708,6 +14717,10 @@ html {
 .newsArchive > li .cont .title a {
   text-decoration: none;
   color: #212529;
+  transition: all 0.2s ease-in-out;
+}
+.newsArchive > li .cont .title a:hover {
+  color: #0d6efd;
 }
 .newsArchive > li .cont .description {
   margin-top: 20px;
@@ -14726,29 +14739,39 @@ html {
   font-size: 14px;
   display: inline-block;
 }
+.newsArchive > li .cont .more i {
+  transition: all 0.2s ease-in-out;
+}
 @media (min-width: 576px) {
   .newsArchive > li .cont .more {
     margin-top: 15px;
   }
 }
+.newsArchive > li .cont .more:hover i {
+  transform: translateX(2px);
+}
 .newsArchive.allLink li a {
   text-decoration: none;
   color: #212529;
+  transition: all 0.2s ease-in-out;
+  outline: 1rem solid transparent;
 }
 @media (min-width: 576px) {
   .newsArchive.allLink li a {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
   }
 }
-.newsArchive.allLink li a .cont .data .post-categories li {
-  font-size: 12px;
-  border: 1px solid #dee2e6;
-  border-radius: 5px;
-  padding: 5px 10px;
-  line-height: 1;
-  white-space: nowrap;
+.newsArchive.allLink li a .img img {
+  transition: all 0.2s ease-in-out;
+}
+.newsArchive.allLink li a:hover {
+  background-color: #e9ecef;
+  outline: 1rem solid #e9ecef;
+}
+.newsArchive.allLink li a:hover .img img {
+  transform: scale(1.05);
 }
 
 [v-cloak] {

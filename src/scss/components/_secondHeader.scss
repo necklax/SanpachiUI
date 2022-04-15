@@ -84,18 +84,29 @@
     .footer {
     }
   }
-  & .center {
+  &.center {
+    align-items: center;
     .bg {
       img {
       }
     }
-    .header {
-      .title-en {
+    .cont {
+      align-items: center;
+      @include media-breakpoint-up(sm) {
+        flex-direction: column;
       }
-      .title-ja {
+      > .header {
+        align-items: center;
+        .title-en {
+        }
+        .title-ja {
+          &::after {
+            display: block;
+          }
+        }
       }
-    }
-    .footer {
+      > .footer {
+      }
     }
   }
 }

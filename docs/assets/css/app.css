@@ -14038,6 +14038,23 @@ html {
 .secondHeader .cont > .header .title-ja::after {
   display: none;
 }
+.secondHeader.center {
+  align-items: center;
+}
+.secondHeader.center .cont {
+  align-items: center;
+}
+@media (min-width: 576px) {
+  .secondHeader.center .cont {
+    flex-direction: column;
+  }
+}
+.secondHeader.center .cont > .header {
+  align-items: center;
+}
+.secondHeader.center .cont > .header .title-ja::after {
+  display: block;
+}
 .coverBgImg {
   width: 100%;
   height: 400px;

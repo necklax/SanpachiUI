@@ -15124,7 +15124,7 @@ html {
   font-size: 13px;
 }
 .anchorlinks li a .fal, .anchorlinks li a .fa-angle-down {
-  transition: all 0.3s;
+  transition: all 0.2s ease-in-out;
 }
 .anchorlinks li a .fal:hover, .anchorlinks li a .fa-angle-down:hover {
   transform: translate(0, 2px);

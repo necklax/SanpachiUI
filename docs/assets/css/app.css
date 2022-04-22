@@ -15109,18 +15109,16 @@ html {
   padding-bottom: 30px;
   border-bottom: solid 1px #DEDEDE;
   gap: 20px;
+  list-style: none;
 }
-.anchorlinks .li {
+.anchorlinks li {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   gap: 6px;
 }
-.anchorlinks .li .dd {
-  color: #1E2124;
-}
-.anchorlinks .li .text {
+.anchorlinks li .text {
   text-decoration: none;
   color: #1E2124;
   font-size: 13px;

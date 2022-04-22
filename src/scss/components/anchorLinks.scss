@@ -4,15 +4,13 @@
   padding-bottom: 30px;
   border-bottom: solid 1px #DEDEDE;
   gap: 20px;
-  .li{
+  list-style: none;
+  li{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     gap: 6px;
-    .dd{
-      color: #1E2124;
-    }
     .text{
       text-decoration: none;
       color: #1E2124;

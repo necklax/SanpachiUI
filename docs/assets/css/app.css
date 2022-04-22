@@ -14861,6 +14861,72 @@ html {
   text-decoration: none;
 }
 
+.digestCover {
+  position: relative;
+}
+.digestCover .bg {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+.digestCover .bg::before {
+  content: "";
+  width: 100%;
+  padding-top: 55%;
+  display: block;
+}
+@media (min-width: 576px) {
+  .digestCover .bg::before {
+    padding-top: 40%;
+  }
+}
+.digestCover .bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.digestCover .cont {
+  padding: 0 25px;
+  position: relative;
+  z-index: 2;
+  margin-top: -45px;
+}
+@media (min-width: 576px) {
+  .digestCover .cont {
+    margin-top: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+}
+.digestCover .cont .inner {
+  background-color: #fff;
+  padding: 45px 15px;
+}
+@media (min-width: 576px) {
+  .digestCover .cont .inner {
+    padding: 60px 45px;
+    position: absolute;
+    left: 50%;
+    max-width: 484px;
+  }
+  .digestCover .cont .inner.left {
+    left: auto;
+    right: 50%;
+  }
+}
 [v-cloak] {
   display: none;
 }

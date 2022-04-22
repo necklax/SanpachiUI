@@ -14775,45 +14775,89 @@ html {
 }
 
 .newsBar {
-  display: flex;
-  align-items: center;
   background-color: #212529;
+  display: grid;
+  grid-template: "header .... footer" "body   body body"/auto 1fr auto;
 }
-.newsBar .title {
-  border-right: 1px solid #fff;
+@media (min-width: 576px) {
+  .newsBar {
+    grid-template: "header body footer";
+  }
 }
-.newsBar .title p {
+.newsBar .header {
+  grid-area: header;
   text-transform: uppercase;
   margin: auto;
-  padding: 20px;
+  padding: 15px;
   color: #fff;
 }
-.newsBar .cont {
+@media (min-width: 576px) {
+  .newsBar .header {
+    border-right: 1px solid #fff;
+    padding: 20px;
+  }
+}
+.newsBar .body {
+  grid-area: body;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  border-top: 1px solid #fff;
 }
-.newsBar .cont a {
+@media (min-width: 576px) {
+  .newsBar .body {
+    border-top: none;
+    justify-content: center;
+  }
+}
+.newsBar .body a {
   text-decoration: none;
   color: #212529;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  flex-direction: column;
+  padding: 20px 15px;
 }
-.newsBar .cont a .date p {
-  margin: auto;
-  padding: 20px;
-  padding-right: 15px;
+@media (min-width: 576px) {
+  .newsBar .body a {
+    align-items: center;
+    flex-direction: row;
+    padding: 0px;
+  }
+}
+.newsBar .body a .date {
   color: #fff;
+  padding-bottom: 15px;
 }
-.newsBar .cont a .txt p {
+@media (min-width: 576px) {
+  .newsBar .body a .date {
+    padding-right: 15px;
+    padding: 20px;
+    margin: auto;
+  }
+}
+.newsBar .body a .text {
   margin: auto;
   color: #fff;
-  padding-right: 135px;
+  padding-right: 0px;
 }
-.newsBar .cont .more a {
+@media (min-width: 576px) {
+  .newsBar .body a .text {
+    padding-right: 135px;
+  }
+}
+.newsBar .footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px;
+}
+.newsBar .footer a {
   color: #fff;
   opacity: 0.5;
+  text-decoration: none;
 }
 
 [v-cloak] {

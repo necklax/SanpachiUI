@@ -1,48 +1,76 @@
 .newsBar {
-  display: flex;
-  //   justify-content: space-between;
-  align-items: center;
   background-color: $body-color;
-  .title {
-    border-right: 1px solid $white;
-    p {
-      text-transform: uppercase;
-      margin: auto;
+  display: grid;
+  grid-template:
+    "header .... footer"
+    "body   body body"
+    / auto 1fr auto;
+  @include media-breakpoint-up(sm) {
+    grid-template: "header body footer";
+  }
+  .header {
+    grid-area: header;
+    text-transform: uppercase;
+    margin: auto;
+    padding: 15px;
+    color: $white;
+    @include media-breakpoint-up(sm) {
+      border-right: 1px solid $white;
       padding: 20px;
-      color: $white;
     }
   }
-  .cont {
+  .body {
+    grid-area: body;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    border-top: 1px solid $white;
+    @include media-breakpoint-up(sm) {
+      border-top: none;
+      justify-content: center;
+    }
     a {
       text-decoration: none;
       color: $body-color;
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: center;
+      flex-direction: column;
+      padding: 20px 15px;
+      @include media-breakpoint-up(sm) {
+        align-items: center;
+        flex-direction: row;
+        padding: 0px;
+      }
       .date {
-        p {
-          margin: auto;
-          padding: 20px;
+        color: $white;
+        padding-bottom: 15px;
+        @include media-breakpoint-up(sm) {
           padding-right: 15px;
-          color: $white;
+          padding: 20px;
+          margin: auto;
         }
       }
-      .txt {
-        p {
-          margin: auto;
-          color: $white;
+      .text {
+        margin: auto;
+        color: $white;
+        padding-right: 0px;
+        @include media-breakpoint-up(sm) {
           padding-right: 135px;
         }
       }
     }
-    .more {
-      a {
-        color: $white;
-        opacity: 0.5;
-      }
+  }
+  .footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+    a {
+      color: $white;
+      opacity: 0.5;
+      text-decoration: none;
     }
   }
 }

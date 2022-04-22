@@ -6,7 +6,9 @@
     "body   body body"
     / auto 1fr auto;
   @include media-breakpoint-up(sm) {
-    grid-template: "header body footer";
+    grid-template:
+      "header body footer"
+      / 80px 1fr auto;
   }
   .header {
     grid-area: header;
@@ -27,7 +29,8 @@
     border-top: 1px solid $white;
     @include media-breakpoint-up(sm) {
       border-top: none;
-      justify-content: center;
+      justify-content: flex-start;
+      padding-left: 20px;
     }
     a {
       text-decoration: none;

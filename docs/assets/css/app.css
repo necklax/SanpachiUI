@@ -14781,7 +14781,7 @@ html {
 }
 @media (min-width: 576px) {
   .newsBar {
-    grid-template: "header body footer";
+    grid-template: "header body footer"/80px 1fr auto;
   }
 }
 .newsBar .header {
@@ -14807,7 +14807,8 @@ html {
 @media (min-width: 576px) {
   .newsBar .body {
     border-top: none;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-left: 20px;
   }
 }
 .newsBar .body a {

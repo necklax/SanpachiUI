@@ -24,28 +24,24 @@
       </div>
       <section class="widelayout">
         <div class="brandContainer">
-          <ul class="anchorLinks">
-            <li>
-              <a href="#">
-                <i class="fal fa-angle-down icon"></i> アンカーリンク
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fal fa-angle-down icon"></i> アンカーリンク
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fal fa-angle-down icon"></i> アンカーリンク
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fal fa-angle-down icon"></i> アンカーリンク
-              </a>
-            </li>
-          </ul>
+          <div class="row g-5 g-sm-4">
+            <div class="col-sm-3" v-for="i in 8">
+              <div class="outlineCard">
+                <div class="header">
+                  <div class="icon">
+                    <img src="assets/img/ico01.svg" />
+                  </div>
+                </div>
+                <div class="body">
+                  <h3 class="title">コミュニティマネージャー</h3>
+                  <p class="text">
+                    スマートフォンで最速のA14
+                    Bionicチップ。エッジからエッジまで広がるOLEDディスプレイ。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>

@@ -14918,6 +14918,171 @@ html {
   }
 }
 
+.catchCopyBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5px;
+  margin: 0;
+}
+@media (min-width: 992px) {
+  .catchCopyBar {
+    flex-direction: row;
+    gap: 0;
+  }
+}
+.catchCopyBar span {
+  padding: 15px 20px;
+  background: #212529;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+  letter-spacing: 0.4rem;
+}
+@media (min-width: 992px) {
+  .catchCopyBar span {
+    font-size: 36px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .catchCopyBar span:first-child {
+    padding-left: 20px;
+  }
+  .catchCopyBar span:last-child {
+    padding-right: 20px;
+  }
+}
+.catchCopyBar.center {
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+}
+
+.catchCopyBorder {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 25px;
+  margin: 0;
+}
+@media (min-width: 992px) {
+  .catchCopyBorder {
+    flex-direction: row;
+    gap: 0;
+  }
+}
+.catchCopyBorder span {
+  padding-bottom: 12px;
+  border-bottom: solid 3px #1e2124;
+  color: #1e2124;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+  letter-spacing: 0.4rem;
+}
+@media (min-width: 992px) {
+  .catchCopyBorder span {
+    padding-bottom: 20px;
+    font-size: 36px;
+  }
+}
+.catchCopyBorder.center {
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+}
+
+.anchorLinks {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: solid 1px #dee2e6;
+  gap: 20px;
+  list-style: none;
+}
+.anchorLinks li a {
+  align-items: center;
+  display: flex;
+  gap: 5px;
+  justify-content: flex-start;
+  text-decoration: none;
+  color: #212529;
+  font-size: 13px;
+}
+.anchorLinks li a .icon {
+  transition: all 0.2s ease-in-out;
+}
+.anchorLinks li a:hover .icon {
+  transform: translate(0, 2px);
+}
+
+.outlineCard {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #dee2e6;
+  padding: 30px 20px;
+  gap: 15px;
+  border-radius: 0.25rem;
+}
+@media (min-width: 576px) {
+  .outlineCard {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+.outlineCard .header {
+  width: 20%;
+}
+@media (min-width: 576px) {
+  .outlineCard .header {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 25px;
+  }
+}
+.outlineCard .header .icon {
+  width: 100%;
+  text-align: center;
+}
+.outlineCard .header .icon img {
+  width: 100%;
+}
+@media (min-width: 576px) {
+  .outlineCard .header .icon img {
+    width: 70px;
+  }
+}
+.outlineCard .body {
+  flex: 1;
+}
+.outlineCard .body .title {
+  margin: 0;
+  font-size: 14px;
+}
+@media (min-width: 576px) {
+  .outlineCard .body .title {
+    font-size: 15px;
+    text-align: center;
+  }
+}
+.outlineCard .body .text {
+  margin: 0;
+  margin-top: 15px;
+  font-size: 12px;
+  color: #6c757d;
+}
+@media (min-width: 576px) {
+  .outlineCard .body .text {
+    font-size: 13px;
+  }
+}
+
 [v-cloak] {
   display: none;
 }
@@ -15024,110 +15189,6 @@ html {
 .fadeTopBottom-leave-to {
   opacity: 0;
   transform: translateY(-10px);
-}
-
-.catchCopyBar {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 5px;
-  margin: 0;
-}
-@media (min-width: 992px) {
-  .catchCopyBar {
-    flex-direction: row;
-    gap: 0;
-  }
-}
-.catchCopyBar span {
-  padding: 15px 20px;
-  background: #212529;
-  color: #fff;
-  font-size: 30px;
-  font-weight: bold;
-  margin: 0;
-  letter-spacing: 0.4rem;
-}
-@media (min-width: 992px) {
-  .catchCopyBar span {
-    font-size: 36px;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .catchCopyBar span:first-child {
-    padding-left: 20px;
-  }
-  .catchCopyBar span:last-child {
-    padding-right: 20px;
-  }
-}
-.catchCopyBar.center {
-  justify-content: center;
-  align-items: center;
-  padding-left: 0;
-}
-
-.catchCopyBorder {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 25px;
-  margin: 0;
-}
-@media (min-width: 992px) {
-  .catchCopyBorder {
-    flex-direction: row;
-    gap: 0;
-  }
-}
-.catchCopyBorder span {
-  padding-bottom: 12px;
-  border-bottom: solid 3px #1e2124;
-  color: #1e2124;
-  font-size: 30px;
-  font-weight: bold;
-  margin: 0;
-  letter-spacing: 0.4rem;
-}
-@media (min-width: 992px) {
-  .catchCopyBorder span {
-    padding-bottom: 20px;
-    font-size: 36px;
-  }
-}
-.catchCopyBorder.center {
-  justify-content: center;
-  align-items: center;
-  padding-left: 0;
-}
-
-.anchorlinks {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-  margin: 0;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  border-bottom: solid 1px #dee2e6;
-  gap: 20px;
-  list-style: none;
-}
-.anchorlinks li a {
-  align-items: center;
-  display: flex;
-  gap: 5px;
-  justify-content: flex-start;
-  text-decoration: none;
-  color: #212529;
-  font-size: 13px;
-}
-.anchorlinks li a .icon {
-  transition: all 0.2s ease-in-out;
-}
-.anchorlinks li a:hover .icon {
-  transform: translate(0, 2px);
 }
 
 /*# sourceMappingURL=app.css.map*/

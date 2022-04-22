@@ -1,4 +1,5 @@
 .newsBar {
+  border-radius: $border-radius;
   background-color: $body-color;
   display: grid;
   grid-template:
@@ -16,9 +17,12 @@
     margin: auto;
     padding: 15px;
     color: $white;
+    font-weight: bold;
     @include media-breakpoint-up(sm) {
       border-right: 1px solid $white;
-      padding: 20px;
+      padding: 20px 0;
+      width: 100%;
+      text-align: center;
     }
   }
   .body {
@@ -30,7 +34,6 @@
     @include media-breakpoint-up(sm) {
       border-top: none;
       justify-content: flex-start;
-      padding-left: 20px;
     }
     a {
       text-decoration: none;
@@ -39,27 +42,23 @@
       align-items: flex-start;
       justify-content: center;
       flex-direction: column;
+      gap: 5px;
       padding: 20px 15px;
+      width: 100%;
       @include media-breakpoint-up(sm) {
         align-items: center;
         flex-direction: row;
-        padding: 0px;
+        padding: 10px 20px;
+        height: 100%;
+        gap: 15px;
       }
       .date {
         color: $white;
-        padding-bottom: 15px;
-        @include media-breakpoint-up(sm) {
-          padding-right: 15px;
-          padding: 20px;
-          margin: auto;
-        }
       }
       .text {
-        margin: auto;
         color: $white;
-        padding-right: 0px;
         @include media-breakpoint-up(sm) {
-          padding-right: 135px;
+          flex: 1;
         }
       }
     }
@@ -70,6 +69,7 @@
     justify-content: center;
     align-items: center;
     padding-right: 10px;
+    font-size: 12px;
     a {
       color: $white;
       opacity: 0.5;

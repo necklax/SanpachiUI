@@ -1,8 +1,11 @@
 .anchorlinks {
   display: flex;
   flex-wrap:wrap;
+  padding: 0;
+  margin: 0;
+  padding-top: 30px;
   padding-bottom: 30px;
-  border-bottom: solid 1px #DEDEDE;
+  border-bottom: solid 1px $border-color;
   gap: 20px;
   list-style: none;
   li{
@@ -11,9 +14,13 @@
     justify-content: flex-start;
     align-items: center;
     gap: 6px;
-    .text{
+    a{
+      align-items: center;
+      display: flex;
+      gap: 5px;
+      justify-content: flex-start;
       text-decoration: none;
-      color: #1E2124;
+      color: $body-color;
       font-size: 13px;
     }
   }

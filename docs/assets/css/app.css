@@ -15106,8 +15106,11 @@ html {
 .anchorlinks {
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  padding-top: 30px;
   padding-bottom: 30px;
-  border-bottom: solid 1px #DEDEDE;
+  border-bottom: solid 1px #dee2e6;
   gap: 20px;
   list-style: none;
 }
@@ -15118,9 +15121,13 @@ html {
   align-items: center;
   gap: 6px;
 }
-.anchorlinks li .text {
+.anchorlinks li a {
+  align-items: center;
+  display: flex;
+  gap: 5px;
+  justify-content: flex-start;
   text-decoration: none;
-  color: #1E2124;
+  color: #212529;
   font-size: 13px;
 }
 

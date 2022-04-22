@@ -15123,10 +15123,10 @@ html {
   color: #212529;
   font-size: 13px;
 }
-.anchorlinks li a .fal, .anchorlinks li a .fa-angle-down {
+.anchorlinks li a .icon {
   transition: all 0.2s ease-in-out;
 }
-.anchorlinks li a .fal:hover, .anchorlinks li a .fa-angle-down:hover {
+.anchorlinks li a:hover .icon {
   transform: translate(0, 2px);
 }
 

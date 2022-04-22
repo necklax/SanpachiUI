@@ -15114,13 +15114,6 @@ html {
   gap: 20px;
   list-style: none;
 }
-.anchorlinks li {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 6px;
-}
 .anchorlinks li a {
   align-items: center;
   display: flex;
@@ -15129,6 +15122,12 @@ html {
   text-decoration: none;
   color: #212529;
   font-size: 13px;
+}
+.anchorlinks li a .fal, .anchorlinks li a .fa-angle-down {
+  transition: all 0.3s;
+}
+.anchorlinks li a .fal:hover, .anchorlinks li a .fa-angle-down:hover {
+  transform: translate(0, 2px);
 }
 
 /*# sourceMappingURL=app.css.map*/

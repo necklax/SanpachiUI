@@ -9,11 +9,6 @@
   gap: 20px;
   list-style: none;
   li{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 6px;
     a{
       align-items: center;
       display: flex;
@@ -22,6 +17,12 @@
       text-decoration: none;
       color: $body-color;
       font-size: 13px;
+      .fal,.fa-angle-down{
+        transition: all .3s;
+        &:hover{
+          transform: translate(0,2px);
+        }
+      }
     }
   }
 }

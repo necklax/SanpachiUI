@@ -1,15 +1,15 @@
 .midashi1 {
+  padding-top: 30px;
   position: relative;
   margin: 0;
-  margin-left: 10vw;
   &::before {
     content: "";
     display: block;
     width: 45px;
     height: 2px;
-    background-color: #1E2124;
+    background-color: $body-color;
     position: absolute;
-    top: -30px;
+    top: 0;
     left: 0;
   }
   &::after {
@@ -17,9 +17,9 @@
     display: block;
     width: 15px;
     height: 2px;
-    background-color: #777777;
+    background-color: $secondary;
     position: absolute;
-    top: -30px;
+    top: 0;
     left: 45px;
   }
 }

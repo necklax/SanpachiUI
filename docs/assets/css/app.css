@@ -14925,6 +14925,25 @@ html {
     right: 50%;
   }
 }
+.digestCover .cont .title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+@media (min-width: 576px) {
+  .digestCover .cont .title {
+    font-size: 24px;
+  }
+}
+.digestCover .cont .text {
+  line-height: 2;
+  margin: 30px 0px;
+  color: #777;
+}
+.digestCover .cont .moreLink {
+  color: #212529;
+}
+
 [v-cloak] {
   display: none;
 }

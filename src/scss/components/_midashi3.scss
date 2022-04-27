@@ -1,28 +1,25 @@
-.brandContainer {
-  text-align: center;
-  .midashi3 {
-    display: inline-block;
-    position: relative;
-    margin: 0;
-    padding: 0 10px;
-    &::before,
-    &::after {
-      content: "";
-      width: 10px;
-      height: 10px;
-      position: absolute;
-    }
-    &::before {
-      top: -9px;
-      left: -10px;
-      border-top: solid 1px #1e2124;
-      border-left: solid 1px #1e2124;
-    }
-    &::after {
-      bottom: -9px;
-      right: -10px;
-      border-bottom: solid 1px #1e2124;
-      border-right: solid 1px #1e2124;
-    }
+.midashi3 {
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  padding: 18px 10px;
+  &::before,
+  &::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+  }
+  &::before {
+    top: 0;
+    left: 0;
+    border-top: solid 1px #1e2124;
+    border-left: solid 1px #1e2124;
+  }
+  &::after {
+    bottom: 0;
+    right: 0;
+    border-bottom: solid 1px #1e2124;
+    border-right: solid 1px #1e2124;
   }
 }

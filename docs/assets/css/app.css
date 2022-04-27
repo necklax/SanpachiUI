@@ -15135,30 +15135,27 @@ html {
   left: 0;
 }
 
-.brandContainer {
-  text-align: center;
-}
-.brandContainer .midashi3 {
+.midashi3 {
   display: inline-block;
   position: relative;
   margin: 0;
-  padding: 0 10px;
+  padding: 18px 10px;
 }
-.brandContainer .midashi3::before, .brandContainer .midashi3::after {
+.midashi3::before, .midashi3::after {
   content: "";
   width: 10px;
   height: 10px;
   position: absolute;
 }
-.brandContainer .midashi3::before {
-  top: -9px;
-  left: -10px;
+.midashi3::before {
+  top: 0;
+  left: 0;
   border-top: solid 1px #1e2124;
   border-left: solid 1px #1e2124;
 }
-.brandContainer .midashi3::after {
-  bottom: -9px;
-  right: -10px;
+.midashi3::after {
+  bottom: 0;
+  right: 0;
   border-bottom: solid 1px #1e2124;
   border-right: solid 1px #1e2124;
 }

@@ -1,0 +1,25 @@
+.midashi1 {
+  position: relative;
+  margin: 0;
+  margin-left: 10vw;
+  &::before {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 2px;
+    background-color: #1E2124;
+    position: absolute;
+    top: -30px;
+    left: 0;
+  }
+  &::after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 2px;
+    background-color: #777777;
+    position: absolute;
+    top: -30px;
+    left: 45px;
+  }
+}

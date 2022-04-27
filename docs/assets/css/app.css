@@ -15083,6 +15083,87 @@ html {
   }
 }
 
+.midashi1 {
+  position: relative;
+  margin: 0;
+  margin-left: 10vw;
+}
+.midashi1::before {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 2px;
+  background-color: #1E2124;
+  position: absolute;
+  top: -30px;
+  left: 0;
+}
+.midashi1::after {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 2px;
+  background-color: #777777;
+  position: absolute;
+  top: -30px;
+  left: 45px;
+}
+
+.midashi2 {
+  position: relative;
+  margin: 0;
+  margin-left: 10vw;
+}
+.midashi2::before {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 50%;
+  background-color: #1e2124;
+  position: absolute;
+  top: 0;
+  left: -20px;
+}
+.midashi2::after {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 50%;
+  background-color: #777777;
+  position: absolute;
+  top: 50%;
+  left: -20px;
+}
+
+.brandContainer {
+  width: 100%;
+  margin: 0 auto;
+}
+.brandContainer .midashi3 {
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  text-align: center;
+}
+.brandContainer .midashi3::before, .brandContainer .midashi3::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+}
+.brandContainer .midashi3::before {
+  top: -9px;
+  left: -10px;
+  border-top: solid 1px #1e2124;
+  border-left: solid 1px #1e2124;
+}
+.brandContainer .midashi3::after {
+  bottom: -9px;
+  right: -10px;
+  border-bottom: solid 1px #1e2124;
+  border-right: solid 1px #1e2124;
+}
+
 [v-cloak] {
   display: none;
 }

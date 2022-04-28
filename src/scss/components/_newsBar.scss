@@ -1,0 +1,79 @@
+.newsBar {
+  border-radius: $border-radius;
+  background-color: $body-color;
+  display: grid;
+  grid-template:
+    "header .... footer"
+    "body   body body"
+    / auto 1fr auto;
+  @include media-breakpoint-up(sm) {
+    grid-template:
+      "header body footer"
+      / 80px 1fr auto;
+  }
+  .header {
+    grid-area: header;
+    text-transform: uppercase;
+    margin: auto;
+    padding: 15px;
+    color: $white;
+    font-weight: bold;
+    @include media-breakpoint-up(sm) {
+      border-right: 1px solid $white;
+      padding: 20px 0;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .body {
+    grid-area: body;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-top: 1px solid $white;
+    @include media-breakpoint-up(sm) {
+      border-top: none;
+      justify-content: flex-start;
+    }
+    a {
+      text-decoration: none;
+      color: $body-color;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      gap: 5px;
+      padding: 20px 15px;
+      width: 100%;
+      @include media-breakpoint-up(sm) {
+        align-items: center;
+        flex-direction: row;
+        padding: 10px 20px;
+        height: 100%;
+        gap: 15px;
+      }
+      .date {
+        color: $white;
+      }
+      .text {
+        color: $white;
+        @include media-breakpoint-up(sm) {
+          flex: 1;
+        }
+      }
+    }
+  }
+  .footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+    font-size: 12px;
+    a {
+      color: $white;
+      opacity: 0.5;
+      text-decoration: none;
+    }
+  }
+}

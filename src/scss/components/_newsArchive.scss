@@ -1,105 +1,163 @@
 .newsArchive {
-	margin: 0;
+  margin: 0;
   padding: 0;
   list-style-type: none;
-	> li {
-		margin-bottom: 40px;
-		@include media-breakpoint-up(sm) {
-			display: flex;
-			justify-content: center;
-			align-items: flex-start;
-		}
-		.img { 
-			position: relative;
- 			width: 100%;
-  		overflow: hidden;
-			display: block;
-			@include media-breakpoint-up(sm) {
-				width: 240px;	
-			}
-  		&::before{
-    		content: "";
-    		width: 100%;
-    		padding-top: 61.42%;//高さの比率 ÷ 幅の比率 × 100
-    		display: block;
-		}
-			img {
-				position: absolute;
-    		top: 0;
-    		left: 0;
-    		bottom: 0;
-    		right: 0;
-    		width: 100%;
-    		height: 100%;
-    		object-fit: cover;
-			}
-		}
-		.cont {
-			@include media-breakpoint-up(sm) {
-				margin-left: 35px;
-				flex: 1;
-			}
-			.data {
-				display: flex;
-				justify-content: flex-start;
-				align-items: center;
-				margin-top: 20px;
-				@include media-breakpoint-up(sm) {
-					margin-top: 0px;
-				}
-				.date {
-					color: $secondary;
-					font-size: 13px;
-					margin-right: 15px;
-				}
-				.post-categories {
-					list-style: none;
-					margin: 0;
-					padding: 0;
-					li {
-						a {
-							font-size: 12px;
-        			border: 1px solid $border-color;
-        			border-radius: 5px;
-        			padding: 5px 10px;
-        			line-height: 1;
-       	 			white-space: nowrap;
-							text-decoration: none;
-      				color: $body-color;
-							display: inline-block;
-						}
-					}
-				}
-			}
-			.title {
-				margin-top: 20px;
-				font-size: 15px;
-				@include media-breakpoint-up(sm) {
-					margin-top: 15px;
-				}
-				a {
-					text-decoration: none;
-					color: $body-color;
-				}
-			}
-			.description {
-				margin-top: 20px;
-				color: $secondary;
-				font-size: 13px;
-				@include media-breakpoint-up(sm) {
-					margin-top: 15px;
-					margin-bottom: 0px;
-				}
-			}
-			.more {
-				text-decoration: none;
-				color: $body-color;
-				font-size: 14px;
-				display: inline-block;
-				@include media-breakpoint-up(sm) {
-					margin-top: 15px;
-				}
-			}
-		}
-	}
-}	
+  > li {
+    margin-bottom: 40px;
+    @include media-breakpoint-up(sm) {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .img {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      display: block;
+      @include media-breakpoint-up(sm) {
+        width: 240px;
+      }
+      &::before {
+        content: "";
+        width: 100%;
+        padding-top: 61.42%; //高さの比率 ÷ 幅の比率 × 100
+        display: block;
+      }
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: $transition-base;
+      }
+      &:hover {
+        img {
+          transform: scale(1.05);
+        }
+      }
+    }
+    .cont {
+      @include media-breakpoint-up(sm) {
+        margin-left: 35px;
+        flex: 1;
+      }
+      .data {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 20px;
+        @include media-breakpoint-up(sm) {
+          margin-top: 0px;
+        }
+        .date {
+          color: $secondary;
+          font-size: 13px;
+          margin-right: 15px;
+        }
+        .post-categories {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          li {
+            a,
+            span {
+              font-size: 12px;
+              border: 1px solid $border-color;
+              border-radius: 5px;
+              padding: 5px 10px;
+              line-height: 1;
+              white-space: nowrap;
+              text-decoration: none;
+              color: $body-color;
+              display: inline-block;
+              transition: $transition-base;
+            }
+            a:hover {
+              background-color: $gray-200;
+            }
+          }
+        }
+      }
+      .title {
+        margin-top: 20px;
+        font-size: 15px;
+        @include media-breakpoint-up(sm) {
+          margin-top: 15px;
+        }
+        a {
+          text-decoration: none;
+          color: $body-color;
+          transition: $transition-base;
+          &:hover {
+            color: $primary;
+          }
+        }
+      }
+      .description {
+        margin-top: 20px;
+        color: $secondary;
+        font-size: 13px;
+        @include media-breakpoint-up(sm) {
+          margin-top: 15px;
+          margin-bottom: 0px;
+        }
+      }
+      .more {
+        text-decoration: none;
+        color: $body-color;
+        font-size: 14px;
+        display: inline-block;
+        i {
+          transition: $transition-base;
+        }
+        @include media-breakpoint-up(sm) {
+          margin-top: 15px;
+        }
+        &:hover {
+          i {
+            transform: translateX(2px);
+          }
+        }
+      }
+    }
+  }
+  &.allLink {
+    li {
+      a {
+        text-decoration: none;
+        color: $body-color;
+        transition: $transition-base;
+        outline: 1rem solid transparent;
+        @include media-breakpoint-up(sm) {
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+        }
+        .img {
+          img {
+            transition: $transition-base;
+          }
+        }
+        .cont {
+          .data {
+            .date {
+            }
+          }
+        }
+        &:hover {
+          background-color: $gray-200;
+          outline: 1rem solid $gray-200;
+          .img {
+            img {
+              transform: scale(1.05);
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>anchorLinks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/f137fce928.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="assets/css/app.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="componentTitle">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">index</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              anchorLinks
+            </li>
+          </ol>
+        </nav>
+      </div>
+      <section class="widelayout">
+        <div class="brandContainer">
+          <div class="row g-5 g-sm-4">
+            <div class="col-sm-3" v-for="i in 8">
+              <div class="outlineCard">
+                <div class="header">
+                  <div class="icon">
+                    <img src="assets/img/ico01.svg" />
+                  </div>
+                </div>
+                <div class="body">
+                  <h3 class="title">コミュニティマネージャー</h3>
+                  <p class="text">
+                    スマートフォンで最速のA14
+                    Bionicチップ。エッジからエッジまで広がるOLEDディスプレイ。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

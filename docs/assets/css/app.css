@@ -13869,6 +13869,192 @@ html {
   background-color: rgba(0, 0, 0, 0.075);
 }
 
+.sectionHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+@media (min-width: 576px) {
+  .sectionHeader {
+    margin-bottom: 45px;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: row;
+  }
+}
+@media (min-width: 992px) {
+  .sectionHeader {
+    margin-bottom: 60px;
+  }
+}
+.sectionHeader > .header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+}
+.sectionHeader > .header .title-en {
+  font-family: "Readex Pro", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 0;
+  line-height: 1.2;
+}
+@media (min-width: 576px) {
+  .sectionHeader > .header .title-en {
+    font-size: 36px;
+  }
+}
+.sectionHeader > .header .title-ja {
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  display: flex;
+  font-size: 12px;
+  margin: 0;
+}
+@media (min-width: 576px) {
+  .sectionHeader > .header .title-ja {
+    font-size: 13px;
+  }
+}
+.sectionHeader > .header .title-ja::before, .sectionHeader > .header .title-ja::after {
+  content: "";
+  width: 21px;
+  height: 1px;
+  background-color: #000;
+}
+.sectionHeader > .header .title-ja::after {
+  display: none;
+}
+.sectionHeader.center {
+  text-align: center;
+  align-items: center;
+}
+@media (min-width: 576px) {
+  .sectionHeader.center {
+    flex-direction: column;
+  }
+}
+.sectionHeader.center > .header {
+  align-items: center;
+}
+.sectionHeader.center > .header .title-ja::after {
+  display: block;
+}
+
+.secondHeader {
+  position: relative;
+}
+.secondHeader .bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.secondHeader .bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.secondHeader .bg::after {
+  background-color: black;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+.secondHeader .cont {
+  position: relative;
+  color: #fff;
+  padding: 60px 6vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+}
+@media (min-width: 576px) {
+  .secondHeader .cont {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 70px 6vw;
+  }
+}
+@media (min-width: 1200px) {
+  .secondHeader .cont {
+    padding: 90px 6vw;
+  }
+}
+.secondHeader .cont > .header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+}
+.secondHeader .cont > .header .title-en {
+  font-family: "Readex Pro", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 0;
+  line-height: 1.2;
+}
+@media (min-width: 576px) {
+  .secondHeader .cont > .header .title-en {
+    font-size: 36px;
+  }
+}
+.secondHeader .cont > .header .title-ja {
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  display: flex;
+  font-size: 12px;
+  margin: 0;
+}
+@media (min-width: 576px) {
+  .secondHeader .cont > .header .title-ja {
+    font-size: 13px;
+  }
+}
+.secondHeader .cont > .header .title-ja::before, .secondHeader .cont > .header .title-ja::after {
+  content: "";
+  width: 21px;
+  height: 1px;
+  background-color: white;
+}
+.secondHeader .cont > .header .title-ja::after {
+  display: none;
+}
+.secondHeader.center {
+  align-items: center;
+}
+.secondHeader.center .cont {
+  align-items: center;
+}
+@media (min-width: 576px) {
+  .secondHeader.center .cont {
+    flex-direction: column;
+  }
+}
+.secondHeader.center .cont > .header {
+  align-items: center;
+}
+.secondHeader.center .cont > .header .title-ja::after {
+  display: block;
+}
 .coverBgImg {
   width: 100%;
   height: 400px;
@@ -14730,6 +14916,248 @@ html {
   .newsArchive > li .cont .more {
     margin-top: 15px;
   }
+}
+
+.catchCopyBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5px;
+  margin: 0;
+}
+@media (min-width: 992px) {
+  .catchCopyBar {
+    flex-direction: row;
+    gap: 0;
+  }
+}
+.catchCopyBar span {
+  padding: 15px 20px;
+  background: #212529;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+  letter-spacing: 0.4rem;
+}
+@media (min-width: 992px) {
+  .catchCopyBar span {
+    font-size: 36px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .catchCopyBar span:first-child {
+    padding-left: 20px;
+  }
+  .catchCopyBar span:last-child {
+    padding-right: 20px;
+  }
+}
+.catchCopyBar.center {
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+}
+
+.catchCopyBorder {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 25px;
+  margin: 0;
+}
+@media (min-width: 992px) {
+  .catchCopyBorder {
+    flex-direction: row;
+    gap: 0;
+  }
+}
+.catchCopyBorder span {
+  padding-bottom: 12px;
+  border-bottom: solid 3px #1e2124;
+  color: #1e2124;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+  letter-spacing: 0.4rem;
+}
+@media (min-width: 992px) {
+  .catchCopyBorder span {
+    padding-bottom: 20px;
+    font-size: 36px;
+  }
+}
+.catchCopyBorder.center {
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+}
+
+.anchorLinks {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: solid 1px #dee2e6;
+  gap: 20px;
+  list-style: none;
+}
+.anchorLinks li a {
+  align-items: center;
+  display: flex;
+  gap: 5px;
+  justify-content: flex-start;
+  text-decoration: none;
+  color: #212529;
+  font-size: 13px;
+}
+.anchorLinks li a .icon {
+  transition: all 0.2s ease-in-out;
+}
+.anchorLinks li a:hover .icon {
+  transform: translate(0, 2px);
+}
+
+.outlineCard {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #dee2e6;
+  padding: 30px 20px;
+  gap: 15px;
+  border-radius: 0.25rem;
+}
+@media (min-width: 576px) {
+  .outlineCard {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+.outlineCard .header {
+  width: 20%;
+}
+@media (min-width: 576px) {
+  .outlineCard .header {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 25px;
+  }
+}
+.outlineCard .header .icon {
+  width: 100%;
+  text-align: center;
+}
+.outlineCard .header .icon img {
+  width: 100%;
+}
+@media (min-width: 576px) {
+  .outlineCard .header .icon img {
+    width: 70px;
+  }
+}
+.outlineCard .body {
+  flex: 1;
+}
+.outlineCard .body .title {
+  margin: 0;
+  font-size: 14px;
+}
+@media (min-width: 576px) {
+  .outlineCard .body .title {
+    font-size: 15px;
+    text-align: center;
+  }
+}
+.outlineCard .body .text {
+  margin: 0;
+  margin-top: 15px;
+  font-size: 12px;
+  color: #6c757d;
+}
+@media (min-width: 576px) {
+  .outlineCard .body .text {
+    font-size: 13px;
+  }
+}
+
+.midashi1 {
+  padding-top: 30px;
+  position: relative;
+  margin: 0;
+}
+.midashi1::before {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 2px;
+  background-color: #212529;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.midashi1::after {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 2px;
+  background-color: #6c757d;
+  position: absolute;
+  top: 0;
+  left: 45px;
+}
+
+.midashi2 {
+  padding-left: 20px;
+  position: relative;
+  margin: 0;
+}
+.midashi2::before {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 50%;
+  background-color: #212529;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.midashi2::after {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 50%;
+  background-color: #6c757d;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.midashi3 {
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  padding: 18px 10px;
+}
+.midashi3::before, .midashi3::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+}
+.midashi3::before {
+  top: 0;
+  left: 0;
+  border-top: solid 1px #1e2124;
+  border-left: solid 1px #1e2124;
+}
+.midashi3::after {
+  bottom: 0;
+  right: 0;
+  border-bottom: solid 1px #1e2124;
+  border-right: solid 1px #1e2124;
 }
 
 [v-cloak] {

@@ -1,0 +1,50 @@
+.outlineCard {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid $border-color;
+  padding: 30px 20px;
+  gap: 15px;
+  border-radius: $border-radius;
+  @include media-breakpoint-up(sm) {
+    flex-direction: column;
+    gap: 0;
+  }
+  .header {
+    width: 20%;
+    @include media-breakpoint-up(sm) {
+      width: 100%;
+      padding-top: 15px;
+      padding-bottom: 25px;
+    }
+    .icon {
+      width: 100%;
+      text-align: center;
+      img {
+        width: 100%;
+        @include media-breakpoint-up(sm) {
+          width: 70px;
+        }
+      }
+    }
+  }
+  .body {
+    flex: 1;
+    .title {
+      margin: 0;
+      font-size: 14px;
+      @include media-breakpoint-up(sm) {
+        font-size: 15px;
+        text-align: center;
+      }
+    }
+    .text {
+      margin: 0;
+      margin-top: 15px;
+      font-size: 12px;
+      color: $secondary;
+      @include media-breakpoint-up(sm) {
+        font-size: 13px;
+      }
+    }
+  }
+}

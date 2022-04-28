@@ -1,0 +1,30 @@
+.catchCopyBorder {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 25px;
+  margin: 0;
+  @include media-breakpoint-up(lg) {
+    flex-direction: row;
+    gap: 0;
+  }
+  span {
+    padding-bottom: 12px;
+    border-bottom: solid 3px #1e2124;
+    color: #1e2124;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 0.4rem;
+    @include media-breakpoint-up(lg) {
+      padding-bottom: 20px;
+      font-size: 36px;
+    }
+  }
+  &.center {
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+  }
+}

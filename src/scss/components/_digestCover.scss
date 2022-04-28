@@ -59,14 +59,15 @@
       font-size: 18px;
       font-weight: bold;
       line-height: 1.5;
+      margin-bottom: 30px;
       @include media-breakpoint-up(sm) {
         font-size: 24px;
       }
     }
     .text {
       line-height: 2;
-      margin: 30px 0px;
-      color: #777;
+      margin-bottom: 30px;
+      color: $secondary;
     }
     .moreLink {
       color: $body-color;

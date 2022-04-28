@@ -14929,6 +14929,7 @@ html {
   font-size: 18px;
   font-weight: bold;
   line-height: 1.5;
+  margin-bottom: 30px;
 }
 @media (min-width: 576px) {
   .digestCover .cont .title {
@@ -14937,8 +14938,8 @@ html {
 }
 .digestCover .cont .text {
   line-height: 2;
-  margin: 30px 0px;
-  color: #777;
+  margin-bottom: 30px;
+  color: #6c757d;
 }
 .digestCover .cont .moreLink {
   color: #212529;

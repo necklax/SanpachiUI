@@ -12,9 +12,14 @@
       text-align: left;
       padding: 15px 0;
       margin: 0;
+      .title {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+      }
       .badge {
         padding: 10px 15px;
-        margin-right: 10px;
       }
     }
     dd {
@@ -36,6 +41,7 @@
         width: 1%;
         white-space: nowrap;
         border-bottom: 1px solid $gray-300;
+        vertical-align: top;
       }
       dd {
         display: table-cell;

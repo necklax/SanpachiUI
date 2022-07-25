@@ -21,7 +21,15 @@ html {
     opacity: 1;
   }
 }
-
+@mixin fontSize($font_size: 10) {
+  font-size: calc($font_size / 390 * 100vw);
+}
+@mixin fontSizeSM($font_size: 10) {
+  font-size: calc($font_size / 820 * 100vw);
+}
+@mixin fontSizeLG($font_size: 10) {
+  font-size: calc($font_size / 1366 * 100vw);
+}
 @import "components/header";
 @import "components/toggleMenu";
 @import "components/layout";

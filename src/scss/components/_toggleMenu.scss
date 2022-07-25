@@ -5,19 +5,19 @@
   width: auto;
   height: auto;
   z-index: $zindex-fixed;
-  min-width: $headerHeightSM;
-  min-height: $headerHeightSM;
+  min-width: $headerHeight;
+  min-height: $headerHeight;
   @include media-breakpoint-up(sm) {
-    min-width: $headerHeightLG;
-    min-height: $headerHeightLG;
+    min-width: $headerHeightSM;
+    min-height: $headerHeightSM;
   }
   .toggleMenuBtn {
     position: absolute;
     z-index: 2;
     right: 0;
     top: 0;
-    width: $headerHeightSM;
-    height: $headerHeightSM;
+    width: $headerHeight;
+    height: $headerHeight;
     display: flex;
     gap: 8%;
     flex-direction: column;
@@ -25,8 +25,8 @@
     align-items: center;
     background-color: $body-color;
     @include media-breakpoint-up(sm) {
-      width: $headerHeightLG;
-      height: $headerHeightLG;
+      width: $headerHeightSM;
+      height: $headerHeightSM;
     }
     cursor: pointer;
     .bar,
@@ -70,7 +70,7 @@
     }
   }
   .cont {
-    padding-top: $headerHeightSM;
+    padding-top: $headerHeight;
     background-color: $body-color;
     color: $white;
     position: relative;
@@ -80,7 +80,7 @@
     max-width: 100vw;
     overflow-y: auto;
     @include media-breakpoint-up(sm) {
-      padding-top: $headerHeightLG;
+      padding-top: $headerHeightSM;
     }
     .gnav {
       margin: 0;

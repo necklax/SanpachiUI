@@ -1,10 +1,6 @@
 /*!******************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-1[0].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-1[0].rules[0].use[3]!./src/scss/app.scss ***!
   \******************************************************************************************************************************************************************************************************************************/
-@import url(https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;600&display=swap);
-/*!**********************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-1[0].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-1[0].rules[0].use[3]!./src/scss/app.scss (1) ***!
-  \**********************************************************************************************************************************************************************************************************************************/
 @charset "UTF-8";
 .moreLink {
   display: flex;
@@ -129,7 +125,7 @@ hr:not([size]) {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 1.2;
 }
 
@@ -2081,7 +2077,7 @@ hr:not([size]) {
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 1.2;
 }
 
@@ -6754,7 +6750,7 @@ textarea.form-control-lg {
   display: flex;
   flex-wrap: wrap;
   padding: 0 0;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
   font-size: 0.625rem;
   list-style: none;
 }
@@ -13984,7 +13980,7 @@ html {
   gap: 15px;
 }
 .sectionHeader > .header .title-en {
-  font-family: "Readex Pro", sans-serif;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: bold;
   font-size: 30px;
   margin: 0;
@@ -14091,7 +14087,7 @@ html {
   gap: 15px;
 }
 .secondHeader .cont > .header .title-en {
-  font-family: "Readex Pro", sans-serif;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: bold;
   font-size: 30px;
   margin: 0;
